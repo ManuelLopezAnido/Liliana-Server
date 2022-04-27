@@ -1,6 +1,29 @@
 {
+  "name": "server-pcp-app",
+  "description": "Server for Liliana App",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3"
-  }
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelLopezAnido/Liliana-Server.git"
+  },
+  "author": "Manuel Lopez Anido",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelLopezAnido/Liliana-Server/issues"
+  },
+  "homepage": "https://github.com/ManuelLopezAnido/Liliana-Server#readme"
 }
