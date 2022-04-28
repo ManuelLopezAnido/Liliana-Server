@@ -16,10 +16,6 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/api', router);
 
-app.get('/pcp',(req,res)=>{
-  res.send(dataProd)
-})
-
 app.listen(port, hostname, () => {
   console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
 });

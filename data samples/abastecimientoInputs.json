@@ -1,11 +1,227 @@
 [
   {
-    "codigo": "VP1694",
-    "estanteria": "P",
-    "posicion": "8",
+    "codigo": "CI4572",
+    "estanteria": "L",
+    "posicion": "7",
     "altura": "4",
-    "cantidad": "4000",
+    "cantidad": -4000,
+    "radio": "Baja",
+    "time": "8:42:29"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "13",
+    "altura": "4",
+    "cantidad": -1234,
+    "radio": "Baja",
+    "time": "8:52:16"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "O",
+    "posicion": "15",
+    "altura": "2",
+    "cantidad": -999,
+    "radio": "Baja",
+    "time": "8:57:55"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "13",
+    "altura": "1",
+    "cantidad": -2001,
+    "radio": "Baja",
+    "time": "9:6:10"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "Y",
+    "posicion": "13",
+    "altura": "4",
+    "cantidad": -202,
+    "radio": "Baja",
+    "time": "9:8:49"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "Y",
+    "posicion": "13",
+    "altura": "4",
+    "cantidad": -202,
+    "radio": "Baja",
+    "time": "9:14:4"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "Y",
+    "posicion": "13",
+    "altura": "4",
+    "cantidad": -202,
+    "radio": "Baja",
+    "time": "9:14:30"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": "300",
     "radio": "Alta",
-    "time": "15:38:28"
+    "time": "9:19:32"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": "300",
+    "radio": "Alta",
+    "time": "9:24:1"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": "300",
+    "radio": "Alta",
+    "time": "9:28:44"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": "300",
+    "radio": "Alta",
+    "time": "9:29:14"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": "300",
+    "radio": "Alta",
+    "time": "9:29:40"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 51,
+    "radio": "Alta",
+    "time": "10:33:30"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "cantidad": 8,
+    "radio": "Alta",
+    "time": "10:44:14"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "cantidad": -360,
+    "radio": "Baja",
+    "time": "10:44:58"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "cantidad": 250,
+    "radio": "Alta",
+    "time": "10:46:26"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 600,
+    "radio": "Alta",
+    "time": "10:54:8"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "cantidad": 999,
+    "radio": "Alta",
+    "time": "10:55:20"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "2",
+    "altura": "4",
+    "cantidad": 555,
+    "radio": "Alta",
+    "codigo": "CI4572",
+    "time": "10:57:15"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "2",
+    "altura": "3",
+    "cantidad": 557,
+    "radio": "Alta",
+    "time": "10:58:14"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "2",
+    "altura": "4",
+    "cantidad": 451,
+    "radio": "Alta",
+    "time": "11:0:42"
+  },
+  {
+    "codigo": "CI4572",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "Alta",
+    "cantidad": 400,
+    "time": "11:1:55"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "2",
+    "altura": "4",
+    "cantidad": -450,
+    "radio": "Baja",
+    "time": "11:3:32"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "2",
+    "altura": "4",
+    "cantidad": 1000,
+    "radio": "Alta",
+    "time": "11:7:1"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "2",
+    "altura": "4",
+    "cantidad": -2000,
+    "radio": "Baja",
+    "time": "11:9:1"
   }
 ]

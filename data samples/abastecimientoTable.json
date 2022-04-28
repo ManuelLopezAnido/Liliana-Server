@@ -1,10 +1,10 @@
-﻿[
+[
   {
     "estanteria": "A",
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12,7 +12,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -20,55 +20,42 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "AH4470",
-    "cantidad": 332,
-    "observaciones": ""
+    "cantidad": 1249,
+    "observaciones": "",
+    "time": "10:55:20"
   },
   {
+    "codigo": "CI4572",
     "estanteria": "A",
     "posicion": "1",
     "altura": "1",
-    "codigo": "AH4815",
-    "cantidad": 42000,
-    "observaciones": ""
-  },
-  {
-    "estanteria": "A",
-    "posicion": "1",
-    "altura": "1",
-    "codigo": "AB4557",
-    "cantidad": 17945,
-    "observaciones": ""
-  },
-  {
-    "estanteria": "A",
-    "posicion": "1",
-    "altura": "1",
-    "codigo": "AB4954",
-    "cantidad": 30000,
-    "observaciones": ""
+    "cantidad": 1000,
+    "radio": "Alta"
   },
   {
     "estanteria": "A",
     "posicion": "2",
     "altura": "4",
-    "codigo": "",
-    "CANTIDAD": 0,
-    "observaciones": ""
+    "codigo": "AB4954",
+    "cantidad": 0,
+    "observaciones": "",
+    "time": "11:9:1"
   },
   {
     "estanteria": "A",
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
-    "observaciones": ""
+    "cantidad": 557,
+    "observaciones": "",
+    "time": "10:58:14"
   },
   {
     "estanteria": "A",
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -84,7 +71,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -92,7 +79,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -100,7 +87,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -148,7 +135,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -180,7 +167,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -188,7 +175,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -212,7 +199,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -220,7 +207,7 @@
     "posicion": "7",
     "altura": "3",
     "codigo": "AH4561",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -252,7 +239,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -284,7 +271,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -316,7 +303,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -348,7 +335,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -380,7 +367,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -412,7 +399,7 @@
     "posicion": "13",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -444,7 +431,7 @@
     "posicion": "14",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -452,7 +439,7 @@
     "posicion": "14",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -476,7 +463,7 @@
     "posicion": "15",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -484,7 +471,7 @@
     "posicion": "15",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -492,7 +479,7 @@
     "posicion": "15",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -500,7 +487,7 @@
     "posicion": "15",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -516,7 +503,7 @@
     "posicion": "16",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -524,7 +511,7 @@
     "posicion": "16",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -532,7 +519,7 @@
     "posicion": "16",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -540,7 +527,7 @@
     "posicion": "16",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -548,7 +535,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -556,7 +543,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -644,7 +631,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -676,7 +663,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -684,7 +671,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -708,7 +695,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -740,7 +727,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -772,7 +759,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -796,7 +783,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -836,7 +823,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -868,7 +855,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -900,7 +887,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -964,7 +951,7 @@
     "posicion": "14",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -996,7 +983,7 @@
     "posicion": "15",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1004,7 +991,7 @@
     "posicion": "15",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1012,7 +999,7 @@
     "posicion": "15",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1020,7 +1007,7 @@
     "posicion": "15",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1028,7 +1015,7 @@
     "posicion": "16",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1036,7 +1023,7 @@
     "posicion": "16",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1044,7 +1031,7 @@
     "posicion": "16",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1052,7 +1039,7 @@
     "posicion": "16",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1060,7 +1047,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1372,7 +1359,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "CI4259",
-    "cantidad": 0 ,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1620,7 +1607,7 @@
     "posicion": "14",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1676,7 +1663,7 @@
     "posicion": "16",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1692,7 +1679,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1724,7 +1711,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1732,7 +1719,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -1764,7 +1751,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2148,7 +2135,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2172,7 +2159,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2180,7 +2167,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2196,7 +2183,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2212,7 +2199,7 @@
     "posicion": "13",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2220,7 +2207,7 @@
     "posicion": "13",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2228,7 +2215,7 @@
     "posicion": "13",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2236,7 +2223,7 @@
     "posicion": "13",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2252,7 +2239,7 @@
     "posicion": "14",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2260,7 +2247,7 @@
     "posicion": "14",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2276,7 +2263,7 @@
     "posicion": "15",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2284,7 +2271,7 @@
     "posicion": "15",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2292,7 +2279,7 @@
     "posicion": "15",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2300,7 +2287,7 @@
     "posicion": "15",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2308,7 +2295,7 @@
     "posicion": "16",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2316,7 +2303,7 @@
     "posicion": "16",
     "altura": "3",
     "codigo": "LLAVES CAPACITORES",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2324,7 +2311,7 @@
     "posicion": "16",
     "altura": "3",
     "codigo": "TORNILLOS MEZCLADOS",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2332,7 +2319,7 @@
     "posicion": "16",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2340,7 +2327,7 @@
     "posicion": "16",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2348,7 +2335,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2380,7 +2367,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2396,7 +2383,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2644,7 +2631,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2684,7 +2671,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2708,7 +2695,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2764,7 +2751,7 @@
     "posicion": "13",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2780,7 +2767,7 @@
     "posicion": "13",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2788,7 +2775,7 @@
     "posicion": "13",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2828,7 +2815,7 @@
     "posicion": "15",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2836,7 +2823,7 @@
     "posicion": "15",
     "altura": "3",
     "codigo": "CABLES VENTILACION",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2844,7 +2831,7 @@
     "posicion": "15",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2852,7 +2839,7 @@
     "posicion": "15",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2860,7 +2847,7 @@
     "posicion": "16",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2868,7 +2855,7 @@
     "posicion": "16",
     "altura": "3",
     "codigo": "CABLES VENTILACION",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2876,7 +2863,7 @@
     "posicion": "16",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2884,7 +2871,7 @@
     "posicion": "16",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2892,7 +2879,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2908,7 +2895,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2924,7 +2911,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2932,7 +2919,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2956,7 +2943,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2980,7 +2967,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2988,7 +2975,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -2996,7 +2983,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3004,7 +2991,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3012,7 +2999,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3020,7 +3007,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3028,7 +3015,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3036,7 +3023,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3044,7 +3031,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3052,7 +3039,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3060,7 +3047,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3068,7 +3055,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3084,7 +3071,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3092,7 +3079,7 @@
     "posicion": "7",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3100,7 +3087,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3140,7 +3127,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3156,7 +3143,7 @@
     "posicion": "9",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3164,7 +3151,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3196,7 +3183,7 @@
     "posicion": "10",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3348,7 +3335,7 @@
     "posicion": "15",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3356,7 +3343,7 @@
     "posicion": "15",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3364,7 +3351,7 @@
     "posicion": "15",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3372,7 +3359,7 @@
     "posicion": "15",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3380,7 +3367,7 @@
     "posicion": "16",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3388,7 +3375,7 @@
     "posicion": "16",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3396,7 +3383,7 @@
     "posicion": "16",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3404,7 +3391,7 @@
     "posicion": "16",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3548,7 +3535,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3628,7 +3615,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3652,7 +3639,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3732,7 +3719,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3748,7 +3735,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "AP4412",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -3836,7 +3823,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4084,7 +4071,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4092,7 +4079,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4140,7 +4127,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "AL4972",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4180,7 +4167,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "AL4422",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4196,7 +4183,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "AL4635",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4204,7 +4191,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "AL4643",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4252,7 +4239,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4324,7 +4311,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4380,7 +4367,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4436,7 +4423,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "AM4605",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4444,7 +4431,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "AL4605",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4516,7 +4503,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4540,7 +4527,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4572,7 +4559,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4596,7 +4583,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4628,7 +4615,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "AH1160",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4732,7 +4719,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4748,7 +4735,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "AL4930",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4764,7 +4751,7 @@
     "posicion": "9",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4772,7 +4759,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4804,7 +4791,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "LA4445",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4812,7 +4799,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "LA4808",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4820,7 +4807,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "LA4810",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4828,7 +4815,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "LA4809",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4836,7 +4823,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "LA4807",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -4892,7 +4879,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5036,7 +5023,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "AM4637",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5164,7 +5151,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "AH4715",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5300,7 +5287,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "AH4722",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5308,7 +5295,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "AH4720",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5436,7 +5423,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5452,7 +5439,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5460,7 +5447,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5468,7 +5455,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5476,7 +5463,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5484,7 +5471,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5492,7 +5479,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "AH4773",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5748,7 +5735,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5756,7 +5743,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5764,7 +5751,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5780,7 +5767,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5788,7 +5775,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5812,7 +5799,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5820,7 +5807,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5828,7 +5815,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5844,7 +5831,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5852,7 +5839,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5884,7 +5871,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5924,7 +5911,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5940,7 +5927,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5956,7 +5943,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -5964,7 +5951,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6012,7 +5999,7 @@
     "posicion": "9",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6020,7 +6007,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6140,7 +6127,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6172,7 +6159,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6244,7 +6231,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6268,7 +6255,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6284,7 +6271,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6292,7 +6279,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6300,7 +6287,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6412,7 +6399,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6460,7 +6447,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6508,7 +6495,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "CI4010",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6540,7 +6527,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6588,7 +6575,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "VP1505",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6820,7 +6807,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "CH1906",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6860,7 +6847,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -6924,7 +6911,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "CM4248",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": "IZQUIERDO"
   },
   {
@@ -7284,7 +7271,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7380,7 +7367,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7460,7 +7447,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7508,7 +7495,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7540,7 +7527,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7572,7 +7559,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7596,7 +7583,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7628,7 +7615,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7636,7 +7623,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7660,7 +7647,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7668,7 +7655,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7676,7 +7663,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7684,7 +7671,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7692,7 +7679,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7716,7 +7703,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7724,7 +7711,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7732,7 +7719,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7756,7 +7743,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7780,7 +7767,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7916,7 +7903,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7948,7 +7935,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7956,7 +7943,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7964,7 +7951,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -7996,7 +7983,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8092,7 +8079,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8172,7 +8159,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8204,7 +8191,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "AO5138",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8236,7 +8223,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8308,7 +8295,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8332,7 +8319,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8340,7 +8327,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8372,7 +8359,7 @@
     "posicion": "8",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8380,7 +8367,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8404,7 +8391,7 @@
     "posicion": "9",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8412,7 +8399,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8428,7 +8415,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8436,7 +8423,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8484,7 +8471,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8516,7 +8503,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8604,7 +8591,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8676,7 +8663,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8684,7 +8671,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8876,7 +8863,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "PERFUMINA",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8884,7 +8871,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "SERVILLETA DE MANO",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8892,7 +8879,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "INSUMOS DE LIMPIEZA",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8900,7 +8887,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "TOALLAS PAPEL",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8908,7 +8895,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "DETERGENTE",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8916,7 +8903,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "INSUMOS DE LIMPIEZA",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -8940,7 +8927,7 @@
     "posicion": "14",
     "altura": "4",
     "codigo": "INSUMOS DE LIMPIEZA",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9052,7 +9039,7 @@
     "posicion": "16",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9084,7 +9071,7 @@
     "posicion": "17",
     "altura": "1",
     "codigo": "RP1039",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9108,7 +9095,7 @@
     "posicion": "18",
     "altura": "2",
     "codigo": "INSUMOS RPS100/101",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9204,7 +9191,7 @@
     "posicion": "19",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9356,7 +9343,7 @@
     "posicion": "20",
     "altura": "2",
     "codigo": "RP4933",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9364,7 +9351,7 @@
     "posicion": "20",
     "altura": "2",
     "codigo": "RP4792",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9372,7 +9359,7 @@
     "posicion": "20",
     "altura": "2",
     "codigo": "RP4216",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9380,7 +9367,7 @@
     "posicion": "20",
     "altura": "2",
     "codigo": "RP4604",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9388,7 +9375,7 @@
     "posicion": "20",
     "altura": "2",
     "codigo": "RP4905",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9396,7 +9383,7 @@
     "posicion": "20",
     "altura": "2",
     "codigo": "RP4140",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9868,7 +9855,7 @@
     "posicion": "30",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9940,7 +9927,7 @@
     "posicion": "32",
     "altura": "2",
     "codigo": "RP4521",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": "CLARAS"
   },
   {
@@ -9948,7 +9935,7 @@
     "posicion": "32",
     "altura": "2",
     "codigo": "RP5831",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9956,7 +9943,7 @@
     "posicion": "32",
     "altura": "2",
     "codigo": "RP4392",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9964,7 +9951,7 @@
     "posicion": "32",
     "altura": "2",
     "codigo": "RP5712",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9972,7 +9959,7 @@
     "posicion": "32",
     "altura": "2",
     "codigo": "RP4001",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9980,7 +9967,7 @@
     "posicion": "32",
     "altura": "2",
     "codigo": "RP5029",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -9988,7 +9975,7 @@
     "posicion": "32",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10020,7 +10007,7 @@
     "posicion": "33",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10052,7 +10039,7 @@
     "posicion": "34",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10084,7 +10071,7 @@
     "posicion": "35",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10108,7 +10095,7 @@
     "posicion": "37",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10124,7 +10111,7 @@
     "posicion": "37",
     "altura": "3",
     "codigo": "INSUMOS CALEFACCION",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10180,7 +10167,7 @@
     "posicion": "40",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10300,7 +10287,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP4192",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10308,7 +10295,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP4221",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10316,7 +10303,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP5831",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10324,7 +10311,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP4392",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10332,7 +10319,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP5712",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10340,7 +10327,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP4001",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10348,7 +10335,7 @@
     "posicion": "42",
     "altura": "2",
     "codigo": "RP5029",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10420,7 +10407,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "RP4392",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10428,7 +10415,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "RP4735",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10436,7 +10423,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "RP4192",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10444,7 +10431,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "RP4621",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10452,7 +10439,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "RP5919",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10460,7 +10447,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "RP5831",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10468,7 +10455,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10476,7 +10463,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10484,7 +10471,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10492,7 +10479,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10500,7 +10487,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10508,7 +10495,7 @@
     "posicion": "43",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10524,7 +10511,7 @@
     "posicion": "44",
     "altura": "4",
     "codigo": "RP5572",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10548,7 +10535,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4613",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10556,7 +10543,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4868",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10564,7 +10551,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4905",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10572,7 +10559,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4271",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10580,7 +10567,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4552",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10588,7 +10575,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4432",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10596,7 +10583,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4912",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10604,7 +10591,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4933",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10612,7 +10599,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4352",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10620,7 +10607,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4140",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10628,7 +10615,7 @@
     "posicion": "44",
     "altura": "2",
     "codigo": "RP4792",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10636,7 +10623,7 @@
     "posicion": "44",
     "altura": "1",
     "codigo": "RP4825",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10644,7 +10631,7 @@
     "posicion": "44",
     "altura": "1",
     "codigo": "RP4235",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10652,7 +10639,7 @@
     "posicion": "44",
     "altura": "1",
     "codigo": "RP5417",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10660,7 +10647,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "RP5831",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10684,7 +10671,7 @@
     "posicion": "45",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10700,7 +10687,7 @@
     "posicion": "46",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10716,7 +10703,7 @@
     "posicion": "47",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10892,7 +10879,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -10932,7 +10919,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11132,7 +11119,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11140,7 +11127,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11148,7 +11135,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11236,7 +11223,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11268,7 +11255,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11276,7 +11263,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11332,7 +11319,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11356,7 +11343,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11436,7 +11423,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11492,7 +11479,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11524,7 +11511,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11532,7 +11519,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11540,7 +11527,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11572,7 +11559,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11604,7 +11591,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11636,7 +11623,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11652,7 +11639,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11668,7 +11655,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11740,7 +11727,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "0 S/AR.",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -11844,7 +11831,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12076,7 +12063,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12124,7 +12111,7 @@
     "posicion": "13",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12132,7 +12119,7 @@
     "posicion": "13",
     "altura": "4",
     "codigo": "AL4666",
-    "cantidad": 1.50,
+    "cantidad": 1.5,
     "observaciones": ""
   },
   {
@@ -12180,7 +12167,7 @@
     "posicion": "13",
     "altura": "2",
     "codigo": "AL4665",
-    "cantidad": 1.20,
+    "cantidad": 1.2,
     "observaciones": ""
   },
   {
@@ -12252,7 +12239,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12284,7 +12271,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12308,7 +12295,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12348,7 +12335,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12356,7 +12343,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12364,7 +12351,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12372,7 +12359,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12388,7 +12375,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12396,7 +12383,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12404,7 +12391,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12412,7 +12399,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12420,7 +12407,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12428,7 +12415,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12436,7 +12423,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12444,7 +12431,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12452,7 +12439,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12460,7 +12447,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12468,7 +12455,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12476,7 +12463,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12484,15 +12471,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
-    "observaciones": ""
-  },
-  {
-    "estanteria": "W",
-    "posicion": "3",
-    "altura": "4",
-    "codigo": "CP4991",
-    "cantidad": 1000,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12514,9 +12493,9 @@
   {
     "estanteria": "W",
     "posicion": "3",
-    "altura": "3",
-    "codigo": "",
-    "CANTIDAD": 0,
+    "altura": "4",
+    "codigo": "CP4991",
+    "cantidad": 1000,
     "observaciones": ""
   },
   {
@@ -12524,7 +12503,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12532,7 +12511,15 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
+    "observaciones": ""
+  },
+  {
+    "estanteria": "W",
+    "posicion": "3",
+    "altura": "3",
+    "codigo": "",
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12564,7 +12551,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12572,7 +12559,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12596,7 +12583,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12612,7 +12599,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12620,7 +12607,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12628,7 +12615,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12636,7 +12623,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12668,7 +12655,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12804,7 +12791,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12828,7 +12815,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12836,7 +12823,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12908,7 +12895,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12916,7 +12903,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12948,7 +12935,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12956,7 +12943,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -12996,7 +12983,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13076,7 +13063,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13084,7 +13071,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13092,7 +13079,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13164,7 +13151,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13196,7 +13183,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13204,7 +13191,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13212,7 +13199,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13252,7 +13239,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13276,7 +13263,7 @@
     "posicion": "9",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13324,7 +13311,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13332,7 +13319,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13436,7 +13423,7 @@
     "posicion": "10",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13452,7 +13439,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13460,7 +13447,7 @@
     "posicion": "10",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13476,7 +13463,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13484,7 +13471,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13532,7 +13519,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13588,7 +13575,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13596,7 +13583,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13604,7 +13591,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13636,7 +13623,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13788,7 +13775,7 @@
     "posicion": "13",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13836,7 +13823,7 @@
     "posicion": "13",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13844,7 +13831,7 @@
     "posicion": "13",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13852,7 +13839,7 @@
     "posicion": "13",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -13988,7 +13975,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14028,7 +14015,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14036,7 +14023,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14044,7 +14031,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14068,7 +14055,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14076,7 +14063,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14196,7 +14183,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "AB4305",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14204,7 +14191,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "AB4304",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14212,7 +14199,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "AB4303",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14292,7 +14279,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14380,7 +14367,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14388,7 +14375,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14452,7 +14439,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14532,7 +14519,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14540,7 +14527,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14548,7 +14535,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14564,7 +14551,7 @@
     "posicion": "7",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14588,7 +14575,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14596,7 +14583,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14628,7 +14615,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14636,7 +14623,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14644,7 +14631,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14660,7 +14647,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14668,7 +14655,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14676,7 +14663,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14684,7 +14671,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14692,7 +14679,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14852,7 +14839,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14860,7 +14847,7 @@
     "posicion": "10",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14916,7 +14903,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -14988,7 +14975,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15036,7 +15023,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15140,7 +15127,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15148,7 +15135,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15252,7 +15239,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "CHICOTES MEZCLADOS (SERVICE)",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15260,7 +15247,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "CHICOTES MEZCLADOS (TEMP 2021)",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15268,7 +15255,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "CHOCOTES MODIFICADOS( AO132, AO146)",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15276,7 +15263,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "CHICOTES MEZCLADOS (TEMP 2021)",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15284,7 +15271,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "MANUALES VTHB110- CFH401 -REGULADORES VELOCIDAD- PORTALAMPARAS",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15292,7 +15279,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "LLAVES Y TORNILLOS",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15300,7 +15287,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "LLAVES PARA SELECCIONAR",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15308,7 +15295,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "LLAVES TORNILLOS- CHICOTES",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15316,7 +15303,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "CHICOTES PARA DESARMAR",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15324,7 +15311,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "TORNILLOS MEZCLADOS",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15332,7 +15319,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15340,7 +15327,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15348,7 +15335,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "TORNILLOS MEZCLADOS",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15356,7 +15343,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "CC4709CC4702",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15364,7 +15351,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15372,7 +15359,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15588,7 +15575,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15604,7 +15591,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15644,7 +15631,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15652,7 +15639,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15660,7 +15647,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15668,7 +15655,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15676,7 +15663,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15684,7 +15671,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15700,7 +15687,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15724,7 +15711,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15732,7 +15719,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15772,7 +15759,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15780,7 +15767,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15788,7 +15775,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15796,7 +15783,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15812,7 +15799,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15820,7 +15807,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15828,7 +15815,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15836,7 +15823,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15844,7 +15831,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15852,7 +15839,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15860,7 +15847,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15868,7 +15855,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15876,7 +15863,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15884,7 +15871,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15892,7 +15879,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15908,7 +15895,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15916,7 +15903,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15924,7 +15911,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -15988,7 +15975,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16028,7 +16015,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16036,7 +16023,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16044,7 +16031,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16052,7 +16039,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16092,7 +16079,7 @@
     "posicion": "7",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16100,15 +16087,7 @@
     "posicion": "7",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
-    "observaciones": ""
-  },
-  {
-    "estanteria": "Y",
-    "posicion": "7",
-    "altura": "3",
-    "codigo": "CP5168",
-    "cantidad": 200,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16122,9 +16101,17 @@
   {
     "estanteria": "Y",
     "posicion": "7",
+    "altura": "3",
+    "codigo": "CP5168",
+    "cantidad": 200,
+    "observaciones": ""
+  },
+  {
+    "estanteria": "Y",
+    "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16148,7 +16135,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16156,7 +16143,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16220,7 +16207,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16276,7 +16263,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16380,7 +16367,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16820,7 +16807,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16828,7 +16815,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16836,7 +16823,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16844,7 +16831,7 @@
     "posicion": "11",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16852,7 +16839,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16860,7 +16847,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16868,7 +16855,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16876,7 +16863,7 @@
     "posicion": "11",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16884,7 +16871,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16892,7 +16879,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16900,7 +16887,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16908,7 +16895,7 @@
     "posicion": "11",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16916,7 +16903,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16924,7 +16911,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16932,7 +16919,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16940,7 +16927,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16948,7 +16935,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16956,7 +16943,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16964,7 +16951,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16972,7 +16959,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16980,7 +16967,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16988,7 +16975,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -16996,7 +16983,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17004,7 +16991,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17020,7 +17007,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "LA4259",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17028,7 +17015,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17036,7 +17023,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17044,7 +17031,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17052,7 +17039,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17060,7 +17047,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17068,7 +17055,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17076,7 +17063,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17084,7 +17071,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17092,7 +17079,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17100,7 +17087,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17108,7 +17095,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17116,7 +17103,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17148,7 +17135,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17156,7 +17143,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17164,7 +17151,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17172,7 +17159,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17180,7 +17167,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17188,7 +17175,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17196,7 +17183,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17204,7 +17191,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17212,7 +17199,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17220,7 +17207,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17228,7 +17215,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17236,7 +17223,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17244,7 +17231,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17252,7 +17239,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17260,7 +17247,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17268,7 +17255,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17276,7 +17263,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17284,7 +17271,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17292,7 +17279,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17300,7 +17287,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17308,7 +17295,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17316,7 +17303,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17324,7 +17311,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17332,7 +17319,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17340,7 +17327,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17348,7 +17335,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17356,7 +17343,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17364,7 +17351,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17372,7 +17359,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17380,7 +17367,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17388,7 +17375,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17396,7 +17383,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17404,7 +17391,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17412,7 +17399,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17420,7 +17407,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17428,7 +17415,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17436,7 +17423,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17444,7 +17431,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17452,7 +17439,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17460,7 +17447,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17468,7 +17455,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17476,7 +17463,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17484,7 +17471,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17492,7 +17479,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17500,7 +17487,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17508,7 +17495,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17516,7 +17503,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17524,7 +17511,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17532,7 +17519,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17540,7 +17527,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17548,7 +17535,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17556,7 +17543,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17564,7 +17551,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17572,7 +17559,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17580,7 +17567,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17588,7 +17575,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17596,7 +17583,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17612,7 +17599,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17620,7 +17607,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17628,7 +17615,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17636,7 +17623,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17644,7 +17631,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17764,7 +17751,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17884,7 +17871,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17892,7 +17879,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17900,7 +17887,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17908,7 +17895,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -17916,7 +17903,7 @@
     "posicion": "7",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18084,7 +18071,7 @@
     "posicion": "9",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18092,7 +18079,7 @@
     "posicion": "9",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18100,7 +18087,7 @@
     "posicion": "9",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18108,7 +18095,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18116,7 +18103,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18124,7 +18111,7 @@
     "posicion": "9",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18132,7 +18119,7 @@
     "posicion": "9",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18140,7 +18127,7 @@
     "posicion": "9",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18148,7 +18135,7 @@
     "posicion": "9",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18244,7 +18231,7 @@
     "posicion": "10",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18332,7 +18319,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18340,7 +18327,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18348,7 +18335,7 @@
     "posicion": "11",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18372,7 +18359,7 @@
     "posicion": "12",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18380,7 +18367,7 @@
     "posicion": "12",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18404,7 +18391,7 @@
     "posicion": "12",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18428,7 +18415,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18436,7 +18423,7 @@
     "posicion": "12",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18452,7 +18439,7 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18460,7 +18447,7 @@
     "posicion": "1",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18468,7 +18455,7 @@
     "posicion": "1",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18476,7 +18463,7 @@
     "posicion": "1",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18484,7 +18471,7 @@
     "posicion": "2",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18492,7 +18479,7 @@
     "posicion": "2",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18500,7 +18487,7 @@
     "posicion": "2",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18508,7 +18495,7 @@
     "posicion": "2",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18516,7 +18503,7 @@
     "posicion": "3",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18524,7 +18511,7 @@
     "posicion": "3",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18532,7 +18519,7 @@
     "posicion": "3",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18540,7 +18527,7 @@
     "posicion": "3",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18548,7 +18535,7 @@
     "posicion": "4",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": "REPROCESADAS"
   },
   {
@@ -18556,7 +18543,7 @@
     "posicion": "4",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18564,7 +18551,7 @@
     "posicion": "4",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18572,7 +18559,7 @@
     "posicion": "4",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18580,7 +18567,7 @@
     "posicion": "5",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18588,7 +18575,7 @@
     "posicion": "5",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18596,7 +18583,7 @@
     "posicion": "5",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18604,7 +18591,7 @@
     "posicion": "5",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18612,7 +18599,7 @@
     "posicion": "6",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18620,7 +18607,7 @@
     "posicion": "6",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18628,7 +18615,7 @@
     "posicion": "6",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18636,7 +18623,7 @@
     "posicion": "6",
     "altura": "1",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18644,7 +18631,7 @@
     "posicion": "7",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18652,7 +18639,7 @@
     "posicion": "7",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": "REPROC."
   },
   {
@@ -18660,7 +18647,7 @@
     "posicion": "7",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18668,7 +18655,7 @@
     "posicion": "8",
     "altura": "4",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18676,7 +18663,7 @@
     "posicion": "8",
     "altura": "3",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   },
   {
@@ -18684,7 +18671,7 @@
     "posicion": "8",
     "altura": "2",
     "codigo": "",
-    "CANTIDAD": 0,
+    "cantidad": 0,
     "observaciones": ""
   }
 ]
