@@ -51,6 +51,7 @@ const uploadInput = (req,res)=>{
     if (abasTable[posIndex].codigo===abas.codigo){
       abasTable[posIndex].cantidad=abasTable[posIndex].cantidad + abas.cantidad
       abasTable[posIndex].time = abas.time
+      abasTable[posIndex].date = abas.date
       if  (abasTable[posIndex].cantidad < 0){
         abasTable[posIndex].cantidad=0
       }
@@ -58,6 +59,7 @@ const uploadInput = (req,res)=>{
       abasTable[posIndex].codigo = abas.codigo
       abasTable[posIndex].cantidad = abas.cantidad
       abasTable[posIndex].time = abas.time
+      abasTable[posIndex].date = abas.date
     }
   }
   fs.writeFile('./data samples/abastecimientoTable.json',JSON.stringify(abasTable,null,2),function (err){

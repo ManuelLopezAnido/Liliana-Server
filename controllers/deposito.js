@@ -4,7 +4,18 @@ const depositInputs = require ('../data samples/depositoInputs.json');
 
 const fs = require('fs');
 
+
+console.log('serving')
+
 const getTable = (req,res)=>{
+  // depositTable.forEach(user => {
+  //   user.codigo=user.codigo.toUpperCase()
+  // });
+  // fs.writeFile('./data samples/depositoTable.json',JSON.stringify(depositTable,null,2),'utf-8',function (err){
+    
+  //   if (err) throw (err);
+  // })
+  console.log('serving deposit table')
   res.send(depositTable)
 }
 const login = (req,res)=>{
@@ -38,8 +49,8 @@ const uploadInput = (req,res)=>{
   fs.writeFile('./data samples/depositoInputs.json',JSON.stringify(depositInputs,null,2),function (err){
     if (err) throw (err);
   })
-  console.log(depositTable[3].estanteria)
-  console.log(deposit.estanteria)
+  console.log('table: ',depositTable[3].estanteria)
+  console.log('estanteria: ',deposit.estanteria)
   let posIndex = depositTable.findIndex((pos)=>{
     return(pos.estanteria===deposit.estanteria && pos.posicion===deposit.posicion && pos.altura===deposit.altura)
   })
@@ -51,6 +62,7 @@ const uploadInput = (req,res)=>{
     if (depositTable[posIndex].codigo===deposit.codigo){
       depositTable[posIndex].cantidad=depositTable[posIndex].cantidad + deposit.cantidad
       depositTable[posIndex].time = deposit.time
+      depositTable[posIndex].date = deposit.date
       if  (depositTable[posIndex].cantidad < 0){
         depositTable[posIndex].cantidad=0
       }
@@ -58,6 +70,7 @@ const uploadInput = (req,res)=>{
       depositTable[posIndex].codigo = deposit.codigo
       depositTable[posIndex].cantidad = deposit.cantidad
       depositTable[posIndex].time = deposit.time
+      depositTable[posIndex].date = deposit.date
     }
   }
   fs.writeFile('./data samples/depositoTable.json',JSON.stringify(depositTable,null,2),function (err){

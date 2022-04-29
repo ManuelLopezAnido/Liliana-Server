@@ -223,5 +223,37 @@
     "cantidad": -2000,
     "radio": "Baja",
     "time": "11:9:1"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "10:43:37"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "10:53:19"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "10:55:42"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "10:56:24"
   }
 ]

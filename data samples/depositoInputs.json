@@ -1,1 +1,93 @@
-[]
+[
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "10:57:21"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "11:9:12"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 500,
+    "radio": "Alta",
+    "time": "11:10:13"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "7",
+    "cantidad": 700,
+    "radio": "Alta",
+    "time": "11:15:3"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "7",
+    "cantidad": 700,
+    "radio": "Alta",
+    "time": "11:43:19"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "12",
+    "cantidad": 1200,
+    "radio": "Alta",
+    "time": "11:44:7"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "12",
+    "cantidad": 1200,
+    "radio": "Alta",
+    "time": "11:44:29"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "12",
+    "cantidad": 12000,
+    "radio": "Alta",
+    "time": "11:45:18"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "12",
+    "cantidad": 12000,
+    "radio": "Alta",
+    "time": "11:48:5",
+    "operario": "AUYEROS, CRISTIAN LEONARDO"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "12",
+    "cantidad": 12000,
+    "radio": "Alta",
+    "time": "12:13:24",
+    "operario": "AUYEROS, CRISTIAN LEONARDO"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "8",
+    "cantidad": 900,
+    "radio": "Alta",
+    "time": "12:36:25",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  }
+]
