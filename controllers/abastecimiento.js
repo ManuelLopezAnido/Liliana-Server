@@ -15,11 +15,12 @@ const login = (req,res)=>{
     lider.user===loginData.lider
     )
   })
+  console.log('ABASUSER: ', abasUser[0])
   console.log('index: ',index)
-  console.log('password',abasUser[index].password)
+  console.log('password: ',abasUser[index].password)
   if (abasUser[index].password === "") {
     abasUser[index].password = loginData.contraseña
-    fs.writeFile('../data samples/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+    fs.writeFile('./data samples/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
       if (err) throw (err);
     })
     res.send(abasUser[index])

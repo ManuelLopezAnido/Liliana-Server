@@ -5,8 +5,6 @@ const depositInputs = require ('../data samples/depositoInputs.json');
 const fs = require('fs');
 
 
-console.log('serving')
-
 const getTable = (req,res)=>{
   // depositTable.forEach(user => {
   //   user.codigo=user.codigo.toUpperCase()
@@ -59,18 +57,25 @@ const uploadInput = (req,res)=>{
   if (!depositTable[posIndex]){
     res.status(401).send({message:'La estanteria no existe!'})
   }else{
-    if (depositTable[posIndex].codigo===deposit.codigo){
-      depositTable[posIndex].cantidad=depositTable[posIndex].cantidad + deposit.cantidad
-      depositTable[posIndex].time = deposit.time
-      depositTable[posIndex].date = deposit.date
+    depositTable[posIndex].time = deposit.time
+    depositTable[posIndex].date = deposit.date
+    if (!deposit.cantidad && deposit.radio === 'Baja'){
+      depositTable[posIndex].codigo = ""
+      depositTable[posIndex].cantidad = 0
+    }
+    else if (depositTable[posIndex].codigo === deposit.codigo){
+      console.log('NUMERO cantidad: ', deposit.cantidad)
+      console.log(depositTable[posIndex].cantidad)
+      console.log(parseInt(depositTable[posIndex].cantidad) + deposit.cantidad)
+      depositTable[posIndex].cantidad = +depositTable[posIndex].cantidad + deposit.cantidad
+      console.log('NUMERO: ', depositTable[posIndex].cantidad)
       if  (depositTable[posIndex].cantidad < 0){
-        depositTable[posIndex].cantidad=0
+        depositTable[posIndex].cantidad = 0
       }
-    }else{
+    }
+    else{
       depositTable[posIndex].codigo = deposit.codigo
       depositTable[posIndex].cantidad = deposit.cantidad
-      depositTable[posIndex].time = deposit.time
-      depositTable[posIndex].date = deposit.date
     }
   }
   fs.writeFile('./data samples/depositoTable.json',JSON.stringify(depositTable,null,2),function (err){

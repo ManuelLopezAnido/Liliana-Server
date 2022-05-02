@@ -255,5 +255,55 @@
     "cantidad": 500,
     "radio": "Alta",
     "time": "10:56:24"
+  },
+  {
+    "codigo": "CC4632",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "cantidad": 560,
+    "radio": "Alta",
+    "time": "12:26:57",
+    "date": "2/5:2022"
+  },
+  {
+    "codigo": "CI1282",
+    "estanteria": "N",
+    "posicion": "4",
+    "altura": "2",
+    "radio": "Baja",
+    "cantidad": -1000,
+    "time": "12:38:6",
+    "date": "2/5:2022"
+  },
+  {
+    "codigo": "CI1281",
+    "estanteria": "M",
+    "posicion": "2",
+    "altura": "1",
+    "cantidad": 1019,
+    "radio": "Alta",
+    "time": "12:52:56",
+    "date": "2/5:2022"
+  },
+  {
+    "codigo": "CI1282",
+    "estanteria": "M",
+    "posicion": "2",
+    "altura": "1",
+    "cantidad": 1019,
+    "radio": "Alta",
+    "time": "12:55:28",
+    "date": "2/5:2022"
+  },
+  {
+    "codigo": "AL4633",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "cantidad": 223,
+    "radio": "Alta",
+    "time": "13:14:17",
+    "date": "2/5:2022"
   }
 ]

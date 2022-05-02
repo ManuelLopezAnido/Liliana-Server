@@ -3,21 +3,21 @@
     "estanteria": "A",
     "posicion": "1",
     "altura": "1",
-    "codigo": "AM1366",
-    "cantidad": "",
+    "codigo": "",
+    "cantidad": 0,
     "observaciones": "",
-    "date": "29/4/2022",
-    "time": "0,6375"
+    "date": "2/5/2022",
+    "time": "16:4:31"
   },
   {
     "estanteria": "A",
     "posicion": "1",
     "altura": "2",
-    "codigo": "AM1334",
-    "cantidad": "",
+    "codigo": "AL1100",
+    "cantidad": null,
     "observaciones": "",
-    "date": "14/4/2022",
-    "time": "0,55"
+    "date": "2/5/2022",
+    "time": "16:35:37"
   },
   {
     "estanteria": "A",
@@ -1723,21 +1723,21 @@
     "estanteria": "A",
     "posicion": "35",
     "altura": "3",
-    "codigo": "AH1171",
-    "cantidad": "",
+    "codigo": "CM1215",
+    "cantidad": 0,
     "observaciones": "",
-    "date": "23/4/2022",
-    "time": "0,652083333333333"
+    "date": "2/5:2022",
+    "time": "10:48:33"
   },
   {
     "estanteria": "A",
     "posicion": "35",
     "altura": "4",
-    "codigo": "CI1326",
-    "cantidad": "",
+    "codigo": "CI1274",
+    "cantidad": 42,
     "observaciones": "",
-    "date": "16/4/2022",
-    "time": "0,234722222222222"
+    "date": "2/5:2022",
+    "time": "10:43:36"
   },
   {
     "estanteria": "A",
@@ -1774,10 +1774,10 @@
     "posicion": "36",
     "altura": "3",
     "codigo": "CM1215",
-    "cantidad": "",
+    "cantidad": 0,
     "observaciones": "",
-    "date": "",
-    "time": ""
+    "date": "2/5:2022",
+    "time": "10:46:4"
   },
   {
     "estanteria": "A",
@@ -7083,11 +7083,11 @@
     "estanteria": "C",
     "posicion": "38",
     "altura": "4",
-    "codigo": "",
-    "cantidad": "",
+    "codigo": "CI1274",
+    "cantidad": 42,
     "observaciones": "",
-    "date": "27/4/2022",
-    "time": "0,178472222222222"
+    "date": "2/5:2022",
+    "time": "10:52:51"
   },
   {
     "estanteria": "C",
