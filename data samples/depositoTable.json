@@ -13,11 +13,11 @@
     "estanteria": "A",
     "posicion": "1",
     "altura": "2",
-    "codigo": "AL1100",
-    "cantidad": null,
+    "codigo": "",
+    "cantidad": 0,
     "observaciones": "",
-    "date": "2/5/2022",
-    "time": "16:35:37"
+    "date": "3/5/2022",
+    "time": "10:48:33"
   },
   {
     "estanteria": "A",
@@ -34,10 +34,10 @@
     "posicion": "1",
     "altura": "4",
     "codigo": "",
-    "cantidad": "",
+    "cantidad": 0,
     "observaciones": "",
-    "date": "",
-    "time": ""
+    "date": "3/5/2022",
+    "time": "10:49:35"
   },
   {
     "estanteria": "A",
@@ -1423,11 +1423,11 @@
     "estanteria": "A",
     "posicion": "29",
     "altura": "3",
-    "codigo": "CN1008",
-    "cantidad": "",
+    "codigo": "CN1261",
+    "cantidad": 45,
     "observaciones": "",
-    "date": "",
-    "time": ""
+    "date": "3/5/2022",
+    "time": "13:13:40"
   },
   {
     "estanteria": "A",

@@ -305,5 +305,115 @@
     "radio": "Alta",
     "time": "13:14:17",
     "date": "2/5:2022"
+  },
+  {
+    "codigo": "CC1062",
+    "estanteria": "D",
+    "posicion": "4",
+    "altura": "4",
+    "cantidad": 2000,
+    "radio": "Alta",
+    "time": "10:48:12",
+    "date": "3/5:2022"
+  },
+  {
+    "radio": "Alta",
+    "codigo": "RP1035",
+    "estanteria": "T",
+    "posicion": "13",
+    "altura": "3",
+    "cantidad": 500,
+    "time": "12:28:45",
+    "date": "3/5:2022"
+  },
+  {
+    "estanteria": "T",
+    "posicion": "14",
+    "altura": "3",
+    "cantidad": 1000,
+    "radio": "Alta",
+    "codigo": "RP1035",
+    "time": "12:29:43",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "CC1062",
+    "estanteria": "D",
+    "posicion": "4",
+    "altura": "4",
+    "radio": "Baja",
+    "cantidad": -2000,
+    "time": "14:11:27",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "CC1062",
+    "estanteria": "D",
+    "posicion": "4",
+    "altura": "4",
+    "cantidad": -2000,
+    "radio": "Baja",
+    "time": "14:12:10",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "CP4984",
+    "estanteria": "P",
+    "posicion": "6",
+    "altura": "3",
+    "cantidad": 658,
+    "radio": "Alta",
+    "time": "14:20:39",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "CP4984",
+    "estanteria": "P",
+    "posicion": "6",
+    "altura": "3",
+    "cantidad": -658,
+    "radio": "Baja",
+    "time": "14:23:19",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "CC1076",
+    "estanteria": "D",
+    "posicion": "4",
+    "altura": "4",
+    "cantidad": 2000,
+    "radio": "Alta",
+    "time": "14:38:12",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "CC1076",
+    "estanteria": "D",
+    "posicion": "4",
+    "altura": "4",
+    "cantidad": -2000,
+    "radio": "Baja",
+    "time": "14:38:58",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "AM4200",
+    "estanteria": "L",
+    "posicion": "5",
+    "altura": "4",
+    "cantidad": 600,
+    "radio": "Alta",
+    "time": "14:44:27",
+    "date": "3/5:2022"
+  },
+  {
+    "codigo": "AM4200",
+    "estanteria": "L",
+    "posicion": "5",
+    "altura": "4",
+    "cantidad": -600,
+    "radio": "Baja",
+    "time": "14:45:8",
+    "date": "3/5:2022"
   }
 ]

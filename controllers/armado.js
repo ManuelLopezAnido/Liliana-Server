@@ -23,7 +23,7 @@ const login = (req,res)=>{
   console.log('index: ',index)
   if (armadoUsers[index].password === '') {
     armadoUsers[index].password = loginData.contraseña
-    fs.writeFile('../data samples/armadoUsers.json',JSON.stringify(armadoUsers,null,2),function (err){
+    fs.writeFile('./data samples/armadoUsers.json',JSON.stringify(armadoUsers,null,2),function (err){
       if (err) throw (err);
     })
     res.send(armadoUsers[index])

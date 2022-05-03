@@ -320,5 +320,71 @@
     "date": "2/5/2022",
     "cantidad": null,
     "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "AL1100",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "cantidad": 100,
+    "radio": "Alta",
+    "time": "10:47:14",
+    "date": "3/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "AL1100",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "radio": "Baja",
+    "cantidad": -500,
+    "time": "10:47:55",
+    "date": "3/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "AL1100",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "radio": "Baja",
+    "time": "10:48:33",
+    "date": "3/5/2022",
+    "cantidad": null,
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "CP1140",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "cantidad": 200,
+    "radio": "Alta",
+    "time": "10:49:16",
+    "date": "3/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "CP1140",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "radio": "Baja",
+    "time": "10:49:35",
+    "date": "3/5/2022",
+    "cantidad": null,
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "CN1261",
+    "estanteria": "A",
+    "posicion": "29",
+    "altura": "3",
+    "cantidad": 45,
+    "radio": "Alta",
+    "time": "13:13:40",
+    "date": "3/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
   }
 ]

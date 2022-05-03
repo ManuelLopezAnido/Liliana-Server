@@ -1784,9 +1784,11 @@
     "estanteria": "D",
     "posicion": "4",
     "altura": "4",
-    "codigo": "CP4832",
-    "cantidad": 1970,
-    "observaciones": ""
+    "codigo": "CC1076",
+    "cantidad": 0,
+    "observaciones": "",
+    "time": "14:38:58",
+    "date": "3/5:2022"
   },
   {
     "estanteria": "D",
@@ -5440,9 +5442,11 @@
     "estanteria": "L",
     "posicion": "5",
     "altura": "4",
-    "codigo": "",
+    "codigo": "AM4200",
     "cantidad": 0,
-    "observaciones": ""
+    "observaciones": "",
+    "time": "14:45:8",
+    "date": "3/5:2022"
   },
   {
     "estanteria": "L",
@@ -7252,9 +7256,11 @@
     "estanteria": "P",
     "posicion": "6",
     "altura": "3",
-    "codigo": "CP4934",
-    "cantidad": 2000,
-    "observaciones": ""
+    "codigo": "CP4984",
+    "cantidad": 0,
+    "observaciones": "",
+    "time": "14:23:19",
+    "date": "3/5:2022"
   },
   {
     "estanteria": "P",
@@ -8924,9 +8930,11 @@
     "estanteria": "T",
     "posicion": "13",
     "altura": "3",
-    "codigo": "RP1023",
-    "cantidad": 165,
-    "observaciones": ""
+    "codigo": "RP1035",
+    "cantidad": 500,
+    "observaciones": "",
+    "time": "12:28:45",
+    "date": "3/5:2022"
   },
   {
     "estanteria": "T",
@@ -8940,9 +8948,11 @@
     "estanteria": "T",
     "posicion": "14",
     "altura": "3",
-    "codigo": "RP1030",
-    "cantidad": 20160,
-    "observaciones": ""
+    "codigo": "RP1035",
+    "cantidad": 1000,
+    "observaciones": "",
+    "time": "12:29:43",
+    "date": "3/5:2022"
   },
   {
     "estanteria": "T",
