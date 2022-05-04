@@ -15,7 +15,6 @@ const login = (req,res)=>{
     lider.user===loginData.lider
     )
   })
-  console.log('ABASUSER: ', abasUser[0])
   console.log('index: ',index)
   console.log('password: ',abasUser[index].password)
   if (abasUser[index].password === "") {
