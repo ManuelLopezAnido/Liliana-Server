@@ -1,4 +1,4 @@
-const abasTable = require('../data samples/abastecimientoTable.json')
+const abasTable = require('../data samples/data2.json')
 const abasUser = require('../data samples/abastecimientoUsers.json')
 const abasInputs = require ('../data samples/abastecimientoInputs.json');
 
