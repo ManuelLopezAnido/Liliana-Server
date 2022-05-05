@@ -305,5 +305,386 @@
     "radio": "Alta",
     "time": "13:14:17",
     "date": "2/5:2022"
+  },
+  {
+    "radio": "add",
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 200,
+    "time": "10:45:25",
+    "date": "5/5:2022"
+  },
+  {
+    "radio": "add",
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 200,
+    "time": "10:57:5",
+    "date": "5/5:2022"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 350,
+    "radio": "add",
+    "time": "11:6:6",
+    "date": "5/5:2022"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 620,
+    "radio": "replace",
+    "time": "11:7:7",
+    "date": "5/5:2022"
+  },
+  {
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 620,
+    "radio": "replace",
+    "time": "11:8:15",
+    "date": "5/5:2022"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 900,
+    "radio": "add",
+    "time": "11:15:18",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB4954",
+    "cantidad": 120,
+    "radio": "down",
+    "time": "11:16:8",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "radio": "down",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "time": "11:17:11",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 1523,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "add",
+    "time": "11:20:42",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "radio": "down",
+    "time": "11:21:3",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 1235,
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "add",
+    "time": "11:21:32",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "radio": "down",
+    "time": "11:22:38",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "radio": "down",
+    "time": "11:23:21",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "radio": "down",
+    "time": "11:24:3",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:26:50",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:30:0",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:30:2",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:32:19",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:34:7",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:34:42",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:34:46",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:35:0",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:35:8",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AB4954",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "11:36:5",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 366,
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "add",
+    "time": "11:49:23",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "radio": "add",
+    "cantidad": 555,
+    "time": "12:2:3",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "radio": "down",
+    "time": "12:2:23",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 49,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "12:7:49",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 49,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "12:9:32",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 49,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "12:11:3",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 49,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "12:13:57",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 49,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "12:14:11",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 49,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "time": "12:19:5",
+    "date": "5/5:2022"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 49,
+    "radio": "down",
+    "time": "12:19:59",
+    "date": "5/5:2022"
+  },
+  {
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "cantidad": 49,
+    "radio": "down",
+    "time": "12:21:20",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": null,
+    "codigo": "AH4470",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "2",
+    "radio": "down",
+    "time": "12:41:49",
+    "date": "5/5:2022"
+  },
+  {
+    "cantidad": 2000,
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "radio": "add",
+    "time": "12:47:11",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "clean",
+    "time": "13:22:12",
+    "date": "5/5:2022"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "radio": "clean",
+    "time": "13:22:58",
+    "date": "5/5:2022"
   }
 ]
