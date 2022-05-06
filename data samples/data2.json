@@ -4,15 +4,14 @@
     "posicion": "1",
     "altura": "4",
     "observaciones": "",
-    "time": "13:22:58",
-    "date": "5/5:2022",
+    "time": "13:14:17",
+    "date": "2/5:2022",
     "insumos": [
       {
-        "codigo": "",
-        "cantidad": 0
+        "codigo": "AL4633",
+        "cantidad": 223
       }
-    ],
-    "radio": "clean"
+    ]
   },
   {
     "estanteria": "A",
@@ -31,29 +30,25 @@
     "posicion": "1",
     "altura": "2",
     "observaciones": "",
-    "time": "12:41:49",
+    "time": "10:55:20",
     "insumos": [
       {
-        "codigo": "",
-        "cantidad": 0
+        "codigo": "AH4470",
+        "cantidad": 1249
       }
-    ],
-    "date": "5/5:2022",
-    "radio": "down"
+    ]
   },
   {
     "estanteria": "A",
     "posicion": "1",
     "altura": "1",
-    "radio": "clean",
+    "radio": "Alta",
     "insumos": [
       {
-        "codigo": "",
-        "cantidad": 0
+        "codigo": "CI4572",
+        "cantidad": 1000
       }
-    ],
-    "time": "13:22:12",
-    "date": "5/5:2022"
+    ]
   },
   {
     "estanteria": "A",
