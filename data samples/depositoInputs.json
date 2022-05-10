@@ -386,5 +386,27 @@
     "time": "13:13:40",
     "date": "3/5/2022",
     "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "E",
+    "posicion": "4",
+    "cantidad": 7,
+    "radio": "Alta",
+    "time": "9:1:1",
+    "date": "10/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "B",
+    "posicion": "4",
+    "cantidad": 7,
+    "radio": "Alta",
+    "time": "9:1:55",
+    "date": "10/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN",
+    "altura": "3",
+    "comentarios": "Serigrafiado"
   }
 ]

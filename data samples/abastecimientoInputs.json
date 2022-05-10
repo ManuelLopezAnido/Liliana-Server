@@ -415,5 +415,96 @@
     "radio": "Baja",
     "time": "14:45:8",
     "date": "3/5:2022"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "X",
+    "posicion": "2",
+    "altura": "4",
+    "cantidad": 555,
+    "comentarios": "Rayadas",
+    "radio": "add",
+    "time": "9:22:24",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "X",
+    "posicion": "2",
+    "altura": "4",
+    "codigo": "AB1020",
+    "cantidad": 775,
+    "radio": "add",
+    "time": "9:24:47",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "X",
+    "posicion": "2",
+    "altura": "4",
+    "codigo": "AB1020",
+    "cantidad": 775,
+    "radio": "add",
+    "time": "9:33:52",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "X",
+    "posicion": "2",
+    "altura": "4",
+    "codigo": "AB1020",
+    "cantidad": 775,
+    "radio": "add",
+    "time": "9:35:13",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "X",
+    "posicion": "2",
+    "altura": "4",
+    "codigo": "AB1020",
+    "cantidad": 775,
+    "radio": "add",
+    "time": "9:35:32",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 100,
+    "codigo": "AB1020",
+    "radio": "add",
+    "comentarios": "Rayada",
+    "time": "11:29:52",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AB1020",
+    "cantidad": 55,
+    "radio": "add",
+    "time": "11:30:47",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "W",
+    "posicion": "1",
+    "altura": "4",
+    "cantidad": 99,
+    "comentarios": "Rayada",
+    "radio": "add",
+    "codigo": "AK4612",
+    "time": "11:32:19",
+    "date": "10/5:2022",
+    "operario": "GONZALEZ, LUCAS"
   }
 ]

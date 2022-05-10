@@ -4,7 +4,6 @@ const depositInputs = require ('../data samples/depositoInputs.json');
 
 const fs = require('fs');
 
-
 const getTable = (req,res)=>{
   // depositTable.forEach(user => {
   //   user.codigo=user.codigo.toUpperCase()
@@ -13,19 +12,17 @@ const getTable = (req,res)=>{
     
   //   if (err) throw (err);
   // })
-  console.log('serving deposit table')
   res.send(depositTable)
 }
 const login = (req,res)=>{
+  const  now = new Date()
   const loginData = req.body
-  console.log('login data',loginData)
+  console.log('Login data: ',loginData,'Time: ', now.getHours() + ':' + now.getMinutes)
   const index = depositoUser.findIndex(lider => {
     return(
     lider.user===loginData.lider
     )
   })
-  console.log('index: ',index)
-  console.log('password',depositoUser[index].password)
   if (depositoUser[index].password === "") {
     depositoUser[index].password = loginData.contraseña
     fs.writeFile('./data samples/depositoUsers.json',JSON.stringify(depositoUser,null,2),function (err){
@@ -40,35 +37,32 @@ const login = (req,res)=>{
     res.status(401).send({message:'Contraseña incorrecta'})
   }
 }
+
 const uploadInput = (req,res)=>{
   const deposit = req.body
   depositInputs.push(deposit)
-  console.log(deposit)
+  console.log('Entry inputs data',deposit)
   fs.writeFile('./data samples/depositoInputs.json',JSON.stringify(depositInputs,null,2),function (err){
     if (err) throw (err);
   })
-  console.log('table: ',depositTable[3].estanteria)
-  console.log('estanteria: ',deposit.estanteria)
   let posIndex = depositTable.findIndex((pos)=>{
     return(pos.estanteria===deposit.estanteria && pos.posicion===deposit.posicion && pos.altura===deposit.altura)
   })
-  console.log('index: ', posIndex)
-  console.log(depositTable[posIndex])
   if (!depositTable[posIndex]){
     res.status(401).send({message:'La estanteria no existe!'})
-  }else{
+    console.log('La estantería no existe')
+  }
+  else{
+    console.log('Estanteria antes: ', depositTable[posIndex])
     depositTable[posIndex].time = deposit.time
     depositTable[posIndex].date = deposit.date
+    depositTable[posIndex].comentarios = deposit.comentarios
     if (!deposit.cantidad && deposit.radio === 'Baja'){
       depositTable[posIndex].codigo = ""
       depositTable[posIndex].cantidad = 0
-    }
+    } 
     else if (depositTable[posIndex].codigo === deposit.codigo){
-      console.log('NUMERO cantidad: ', deposit.cantidad)
-      console.log(depositTable[posIndex].cantidad)
-      console.log(parseInt(depositTable[posIndex].cantidad) + deposit.cantidad)
       depositTable[posIndex].cantidad = +depositTable[posIndex].cantidad + deposit.cantidad
-      console.log('NUMERO: ', depositTable[posIndex].cantidad)
       if  (depositTable[posIndex].cantidad < 0){
         depositTable[posIndex].cantidad = 0
       }
@@ -77,6 +71,7 @@ const uploadInput = (req,res)=>{
       depositTable[posIndex].codigo = deposit.codigo
       depositTable[posIndex].cantidad = deposit.cantidad
     }
+    console.log('Estanteria despues: ', depositTable[posIndex])
   }
   fs.writeFile('./data samples/depositoTable.json',JSON.stringify(depositTable,null,2),function (err){
     if (err) throw (err);

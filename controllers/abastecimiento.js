@@ -9,7 +9,7 @@ const getTable = (req,res)=>{
 }
 const login = (req,res)=>{
   const loginData = req.body
-  console.log('login data',loginData)
+  console.log('Login data: ',loginData)
   const index = abasUser.findIndex(lider => {
     return(
     lider.user===loginData.lider
@@ -39,15 +39,16 @@ const uploadInput = (req,res)=>{
   let posIndex = abasTable.findIndex((pos)=>{
     return(pos.estanteria===abas.estanteria && pos.posicion===abas.posicion && pos.altura===abas.altura)
   })
-  console.log('index: ', posIndex)
-  console.log('Datos encontrados',abasTable[posIndex])
-  
   if (!abasTable[posIndex]){
     res.status(401).send({message:'La estanteria no existe!'})
-  }else{
+    console.log('La estantería no existe')
+  }
+  else{
+    console.log('Estanteria antes: ', abasTable[posIndex])
     abasTable[posIndex].time = abas.time
     abasTable[posIndex].date = abas.date
     abasTable[posIndex].radio = abas.radio
+    abasTable[posIndex].comentarios = abas.comentarios
     switch (abas.radio){
       case 'add':
         //First looks if insmuos is empty
@@ -60,7 +61,7 @@ const uploadInput = (req,res)=>{
             insumo.codigo === abas.codigo
           )
         })
-        if (indexAdd === -1){
+        if (indexAdd === -1 || /^[V-Z]{1}$/.test(abas.estanteria)){
           abasTable[posIndex].insumos.push({
             ['codigo']:abas.codigo,
             ['cantidad']:abas.cantidad
@@ -89,7 +90,8 @@ const uploadInput = (req,res)=>{
             const insumoToRemove = abasTable[posIndex].insumos[indexDown]
             abasTable[posIndex].insumos.splice(indexDown,1)
             res.status(200).send(insumoToRemove)
-          } else {
+          } 
+          else {
             abasTable[posIndex].insumos[indexDown].cantidad -= abas.cantidad
             if (abasTable[posIndex].insumos[indexDown].cantidad <= 0) {
               abasTable[posIndex].insumos.splice(indexDown,1)
@@ -113,6 +115,7 @@ const uploadInput = (req,res)=>{
       default:
         res.status(401).send({message:'Ingreso no válido'})
     }
+    console.log('La estanteria despues: ', abasTable[posIndex])
   }
   fs.writeFile('./data samples/abastecimientoTable.json',JSON.stringify(abasTable,null,2),function (err){
     if (err) throw (err);

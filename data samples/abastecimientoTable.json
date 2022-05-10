@@ -45,15 +45,15 @@
     "estanteria": "A",
     "posicion": "1",
     "altura": "1",
-    "radio": "clean",
+    "radio": "add",
     "insumos": [
       {
-        "codigo": "",
-        "cantidad": 0
+        "codigo": "AB1020",
+        "cantidad": 155
       }
     ],
-    "time": "13:22:12",
-    "date": "5/5:2022"
+    "time": "11:30:47",
+    "date": "10/5:2022"
   },
   {
     "estanteria": "A",
@@ -15464,8 +15464,16 @@
       {
         "codigo": "",
         "cantidad": 0
+      },
+      {
+        "codigo": "AK4612",
+        "cantidad": 99
       }
-    ]
+    ],
+    "time": "11:32:19",
+    "date": "10/5:2022",
+    "radio": "add",
+    "comentarios": "Rayada"
   },
   {
     "estanteria": "W",
@@ -16778,18 +16786,17 @@
     "observaciones": "",
     "insumos": [
       {
-        "codigo": "",
-        "cantidad": 0
+        "codigo": "AB1020",
+        "cantidad": 555
       },
       {
-        "codigo": "AP4874",
-        "cantidad": 11000
-      },
-      {
-        "codigo": "AP4872",
-        "cantidad": 4000
+        "codigo": "AB1020",
+        "cantidad": 775
       }
-    ]
+    ],
+    "time": "9:35:32",
+    "date": "10/5:2022",
+    "radio": "add"
   },
   {
     "estanteria": "X",

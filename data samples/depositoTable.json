@@ -2743,11 +2743,12 @@
     "estanteria": "B",
     "posicion": "4",
     "altura": "3",
-    "codigo": "CI1158",
-    "cantidad": "",
+    "codigo": "AB1020",
+    "cantidad": 7,
     "observaciones": "",
-    "date": "44673",
-    "time": "0,791666666666667"
+    "date": "10/5/2022",
+    "time": "9:1:55",
+    "comentarios": "Serigrafiado"
   },
   {
     "estanteria": "B",
