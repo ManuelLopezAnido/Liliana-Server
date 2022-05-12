@@ -46,7 +46,7 @@ const uploadInput = (req,res)=>{
     if (err) throw (err);
   })
   let posIndex = depositTable.findIndex((pos)=>{
-    return(pos.estanteria===deposit.estanteria && pos.posicion===deposit.posicion && pos.altura===deposit.altura)
+    return(pos.estanteria===deposit.estanteria && pos.posicion===deposit.posicion)
   })
   if (!depositTable[posIndex]){
     res.status(401).send({message:'La estanteria no existe!'})

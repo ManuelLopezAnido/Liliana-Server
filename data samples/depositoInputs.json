@@ -408,5 +408,17 @@
     "operario": "CABRERA, GERARDO SEBASTIAN",
     "altura": "3",
     "comentarios": "Serigrafiado"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "38",
+    "altura": "5",
+    "cantidad": 200,
+    "radio": "Alta",
+    "comentarios": "Serigrafiado",
+    "time": "14:32:40",
+    "date": "12/5/2022",
+    "operario": "CABRERA, GERARDO SEBASTIAN"
   }
 ]
