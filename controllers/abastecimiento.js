@@ -64,16 +64,19 @@ const uploadInput = (req,res)=>{
         if (indexAdd === -1 || /^[V-Z]{1}$/.test(abas.estanteria)){
           abasTable[posIndex].insumos.push({
             ['codigo']:abas.codigo,
-            ['cantidad']:abas.cantidad
+            ['cantidad']:abas.cantidad,
+            ['comentarios']:abas.comentarios
           })
         } else {
           abasTable[posIndex].insumos[indexAdd].cantidad += abas.cantidad
+          abasTable[posIndex].insumos[indexAdd].comentarios = abas.comentarios
         }
         break
       case 'replace':
         abasTable[posIndex].insumos=[{
           ['codigo']:abas.codigo,
-          ['cantidad']:abas.cantidad
+          ['cantidad']:abas.cantidad,
+          ['comentarios']:abas.comentarios
         }]
         break
       case 'down':

@@ -506,5 +506,63 @@
     "time": "11:32:19",
     "date": "10/5:2022",
     "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "codigo": "AB1020",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "cantidad": 20,
+    "comentarios": "coments",
+    "radio": "add",
+    "time": "12:17:1",
+    "date": "16/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "codigo": "AH4527",
+    "cantidad": 67,
+    "comentarios": "coments2",
+    "radio": "add",
+    "time": "12:17:50",
+    "date": "16/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "1",
+    "radio": "down",
+    "codigo": "AB1020",
+    "time": "12:18:15",
+    "date": "16/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "cantidad": 175,
+    "codigo": "AM4549",
+    "estanteria": "A",
+    "posicion": "1",
+    "altura": "4",
+    "comentarios": "coments",
+    "radio": "add",
+    "time": "12:19:41",
+    "date": "16/5:2022",
+    "operario": "GONZALEZ, LUCAS"
+  },
+  {
+    "estanteria": "V",
+    "posicion": "1",
+    "altura": "4",
+    "codigo": "AM4549",
+    "radio": "add",
+    "comentarios": "coments",
+    "cantidad": 174,
+    "time": "12:20:32",
+    "date": "16/5:2022",
+    "operario": "GONZALEZ, LUCAS"
   }
 ]
