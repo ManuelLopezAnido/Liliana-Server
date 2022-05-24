@@ -1,11 +1,15 @@
-const abasTable = require('../data samples/abastecimientoTable.json')
-const abasUser = require('../data samples/abastecimientoUsers.json')
-const abasInputs = require ('../data samples/abastecimientoInputs.json');
+const db = require ('../config.js')
+
+const abasTable = require('../../'+db+'/abastecimientoTable.json')
+const abasUser = require('../../'+db+'/abastecimientoUsers.json')
+const abasInputs = require ('../../'+db+'/abastecimientoInputs.json');
+
 
 const fs = require('fs');
-
+console.log ('db es:',db)
 const getTable = (req,res)=>{
   res.send(abasTable)
+
 }
 const login = (req,res)=>{
   const loginData = req.body
@@ -17,7 +21,7 @@ const login = (req,res)=>{
   })
   if (abasUser[index].password === "") {
     abasUser[index].password = loginData.contraseña
-    fs.writeFile('./data samples/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+    fs.writeFile('../'+db+'/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
       if (err) throw (err);
     })
     res.send(abasUser[index])
@@ -33,7 +37,7 @@ const uploadInput = (req,res)=>{
   const abas = req.body
   abasInputs.push(abas)
   console.log('Datos ingresado', abas)
-  fs.writeFile('./data samples/abastecimientoInputs.json',JSON.stringify(abasInputs,null,2),function (err){
+  fs.writeFile('../'+db+'/abastecimientoInputs.json',JSON.stringify(abasInputs,null,2),function (err){
     if (err) throw (err);
   })
   let posIndex = abasTable.findIndex((pos)=>{
@@ -120,7 +124,7 @@ const uploadInput = (req,res)=>{
     }
     console.log('La estanteria despues: ', abasTable[posIndex])
   }
-  fs.writeFile('./data samples/abastecimientoTable.json',JSON.stringify(abasTable,null,2),function (err){
+  fs.writeFile('../'+db+'/abastecimientoTable.json',JSON.stringify(abasTable,null,2),function (err){
     if (err) throw (err);
   })
   res.send(abasTable[posIndex])

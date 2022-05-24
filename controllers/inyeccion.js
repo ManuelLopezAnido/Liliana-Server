@@ -1,5 +1,7 @@
-const dataProd = require ('../data samples/productionTable.json')
-const inyeccionUser = require('../data samples/inyeccionUsers.json')
+const db = require ('../config.js')
+
+const dataProd = require ('../../'+db+'/productionTable.json')
+const inyeccionUser = require('../../'+db+'/inyeccionUsers.json')
 
 const fs = require('fs');
 
@@ -18,7 +20,7 @@ const login = (req,res)=>{
   console.log('password',inyeccionUser[index].password)
   if (inyeccionUser[index].password === "") {
     inyeccionUser[index].password = loginData.contraseña
-    fs.writeFile('./data samples/inyeccionUsers.json',JSON.stringify(inyeccionUser,null,2),function (err){
+    fs.writeFile('../'+db+'/inyeccionUsers.json',JSON.stringify(inyeccionUser,null,2),function (err){
       if (err) throw (err);
     })
     res.send(inyeccionUser[index])
