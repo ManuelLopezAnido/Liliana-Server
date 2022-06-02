@@ -1,17 +1,21 @@
 const db = require ('../config.js')
 
 const abasTable = require('../../'+db+'/abastecimientoTable.json')
-const abasUser = require('../../'+db+'/abastecimientoUsers.json')
 const abasInputs = require ('../../'+db+'/abastecimientoInputs.json');
 
 
 const fs = require('fs');
-console.log ('db es:',db)
+
 const getTable = (req,res)=>{
   res.send(abasTable)
-
+}
+const getInputs = (req,res)=>{
+  res.send(abasInputs)
 }
 const login = (req,res)=>{
+  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
+  let abasUser = JSON.parse(abasUserRaw)
+  console.log('first user: ',abasUser[0])
   const loginData = req.body
   console.log('Login data: ',loginData)
   const index = abasUser.findIndex(lider => {
@@ -130,4 +134,4 @@ const uploadInput = (req,res)=>{
   res.send(abasTable[posIndex])
 }
 
-module.exports = {getTable, login, uploadInput}
+module.exports = {getTable, login, uploadInput, getInputs}
