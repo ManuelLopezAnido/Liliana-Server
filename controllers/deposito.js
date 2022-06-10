@@ -11,6 +11,9 @@ const getTable = (req,res)=>{
   res.send(depoTable)
 }
 const login = (req,res)=>{
+  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
+  let depoUser = JSON.parse(depoUserRaw)
+  console.log('first user: ',depoUser[0])
   const loginData = req.body
   console.log('Login data: ',loginData)
   const index = depoUser.findIndex(lider => {
@@ -71,7 +74,7 @@ const uploadInput = (req,res)=>{
             ['comentarios']:depo.comentarios
           })
         } else {
-          depoTable[posIndex].insumos[indexAdd].cantidad += depo.cantidad
+          depoTable[posIndex].insumos[indexAdd].cantidad = +depoTable[posIndex].insumos[indexAdd].cantidad + depo.cantidad
           depoTable[posIndex].insumos[indexAdd].comentarios = depo.comentarios
         }
         break
