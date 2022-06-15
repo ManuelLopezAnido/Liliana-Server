@@ -38,6 +38,7 @@ const login = (req,res)=>{
 const uploadInput = (req,res)=>{
   const depo = req.body
   depoInputs.push(depo)
+  depo.cantidad = (depo.cantidad || "")
   console.log('Datos ingresado', depo)
   fs.writeFile('../'+db+'/depositoInputs.json',JSON.stringify(depoInputs,null,2),function (err){
     if (err) throw (err);
@@ -74,6 +75,7 @@ const uploadInput = (req,res)=>{
             ['comentarios']:depo.comentarios
           })
         } else {
+          console.log(+depoTable[posIndex].insumos[indexAdd].cantidad , depo.cantidad )
           depoTable[posIndex].insumos[indexAdd].cantidad = +depoTable[posIndex].insumos[indexAdd].cantidad + depo.cantidad
           depoTable[posIndex].insumos[indexAdd].comentarios = depo.comentarios
         }
