@@ -9,6 +9,13 @@ const fs = require('fs');
 const getTable = (req,res)=>{
   res.send(abasTable)
 }
+
+const getPiezas = (req, res) => {
+  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
+  let piezas = JSON.parse(piezasRaw)
+  res.send(piezas)
+}
+
 const getInputs = (req,res)=>{
   res.send(abasInputs)
 }
@@ -37,6 +44,7 @@ const login = (req,res)=>{
     res.status(401).send({message:'Contraseña incorrecta'})
   }
 }
+
 const uploadInput = (req,res)=>{
   const abas = req.body
   abasInputs.push(abas)
@@ -48,7 +56,7 @@ const uploadInput = (req,res)=>{
     return(pos.estanteria===abas.estanteria && pos.posicion===abas.posicion && pos.altura===abas.altura)
   })
   if (!abasTable[posIndex]){
-    res.status(401).send({message:'La estanteria no existe!'})
+    res.status(401).end({message:'La estanteria no existe!'})
     console.log('La estantería no existe')
   }
   else{
@@ -56,7 +64,6 @@ const uploadInput = (req,res)=>{
     abasTable[posIndex].time = abas.time
     abasTable[posIndex].date = abas.date
     abasTable[posIndex].radio = abas.radio
-    abasTable[posIndex].comentarios = abas.comentarios
     switch (abas.radio){
       case 'add':
         //First looks if insmuos is empty
@@ -95,7 +102,7 @@ const uploadInput = (req,res)=>{
           )
         })
         if (indexDown === -1){
-          res.status(401).send({message:'Este insumo no se encuentra en la estanteria!'})
+          res.status(401).end({message:'Este insumo no se encuentra en la estanteria!'})
         } else {
           if (!abas.cantidad){
             const insumoToRemove = abasTable[posIndex].insumos[indexDown]
@@ -118,13 +125,23 @@ const uploadInput = (req,res)=>{
         }
         break
       case 'clean':
-        abasTable[posIndex].insumos=[{
-          codigo:'',
-          cantidad: 0
-        }]
+        console.log(abas.altura)
+        if (abas.altura.charAt(1)==="A"){
+          for (let i = 0 ; i<4 ; i++){
+            abasTable[posIndex + i].insumos=[{
+              codigo:'',
+              cantidad: 0
+            }]
+          }
+        } else {
+          abasTable[posIndex].insumos=[{
+            codigo:'',
+            cantidad: 0
+          }]
+        }
         break
       default:
-        res.status(401).send({message:'Ingreso no válido'})
+        res.status(401).end({message:'Ingreso no válido'})
     }
     console.log('La estanteria despues: ', abasTable[posIndex])
   }
@@ -134,4 +151,4 @@ const uploadInput = (req,res)=>{
   res.send(abasTable[posIndex])
 }
 
-module.exports = {getTable, login, uploadInput, getInputs}
+module.exports = {getTable, login, uploadInput, getInputs, getPiezas}

@@ -1,15 +1,23 @@
 const db = require ('../config.js')
 
 const depoTable = require('../../'+db+'/depositoTable.json')
-const depoUser = require('../../'+db+'/depositoUsers.json')
 const depoInputs = require ('../../'+db+'/depositoInputs.json');
 
 
 const fs = require('fs');
-console.log ('db es:',db)
+
 const getTable = (req,res)=>{
   res.send(depoTable)
 }
+
+const getPiezas = (req, res) => {
+  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
+  let piezas = JSON.parse(piezasRaw)
+  res.send(piezas)
+}
+
+
+
 const login = (req,res)=>{
   let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
   let depoUser = JSON.parse(depoUserRaw)
@@ -47,8 +55,8 @@ const uploadInput = (req,res)=>{
     return(pos.estanteria===depo.estanteria && pos.posicion===depo.posicion && pos.altura===depo.altura)
   })
   if (!depoTable[posIndex]){
-    res.status(401).send({message:'La estanteria no existe!'})
     console.log('La estantería no existe')
+    res.status(401).end({message:'La estanteria no existe!'})
   }
   else{
     console.log('Estanteria antes: ', depoTable[posIndex])
@@ -56,13 +64,37 @@ const uploadInput = (req,res)=>{
     depoTable[posIndex].date = depo.date
     depoTable[posIndex].radio = depo.radio
     depoTable[posIndex].comentarios = depo.comentarios
+    
     switch (depo.radio){
       case 'add':
-        //First looks if insmuos is empty
+        //First look the amount of elements
+        let maxAmount = 100
+        switch(depo.estanteria){
+          case 'A':
+          case 'B':
+            maxAmount = 4;
+            break;
+          case 'E':
+          case 'C': 
+            maxAmount = 8;
+            break;
+          case 'G':
+            maxAmount = 7;
+            break;
+          case 'H':
+            maxAmount = 3;
+            break;
+        }
+        if (depoTable[posIndex].insumos.length > maxAmount){
+          console.log('La estantería llego a su capcidad maxima de ' + maxAmount + ' unidades')
+          res.status(401).end({message:'Estanteria llena!'})
+        }
+
+        //Second looks if insmuos is empty
         if(!depoTable[posIndex].insumos[0].codigo){
           depoTable[posIndex].insumos=[]
         }
-        //Second, look if it is already in the position
+        //Then, look if it is already in the position
         const indexAdd = depoTable[posIndex].insumos.findIndex((insumo)=>{
           return(
             insumo.codigo === depo.codigo
@@ -134,4 +166,4 @@ const uploadInput = (req,res)=>{
   res.send(depoTable[posIndex])
 }
 
-module.exports = {getTable, login, uploadInput}
+module.exports = {getTable, login, uploadInput, getPiezas}
