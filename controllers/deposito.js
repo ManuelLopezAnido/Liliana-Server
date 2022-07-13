@@ -1,27 +1,89 @@
 const db = require ('../config.js')
-
-const depoTable = require('../../'+db+'/depositoTable.json')
-const depoInputs = require ('../../'+db+'/depositoInputs.json');
-
-
 const fs = require('fs');
 
-const getTable = (req,res)=>{
-  res.send(depoTable)
+
+const backup = () => {
+  let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let table = JSON.parse(tableRaw)
+  fs.writeFile('../backup/depoTable.json',JSON.stringify(table,null,2),function (err){
+    if (err) throw (err);
+  })
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let inputs = JSON.parse(inputsRaw)
+  fs.writeFile('../backup/depoUsers.json',JSON.stringify(inputs,null,2),function (err){
+    if (err) throw (err);
+  })
 }
 
+setInterval(backup,1000*3600)
+
+const getTable = (req,res)=>{
+  let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let table = JSON.parse(tableRaw)
+  res.send(table)
+}
 const getPiezas = (req, res) => {
   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
   let piezas = JSON.parse(piezasRaw)
   res.send(piezas)
 }
+const getUsers = (req, res) => {
+  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
+  let users = JSON.parse(usersRaw)
+  res.send(users)
+}
+const newWorker = (req,res) => {
+  const newUser = req.body
+  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
+  let depoUser = JSON.parse(depoUserRaw)
+  const found = depoUser.findIndex (user => {
+    return user.user === newUser.nombreOpe
+  });
+  if (found !== -1 ){
+    console.log('El usuario ya existe')
+    res.status(401).send({message:'EL USUARIO YA EXISTE'})
+    return
+  }
+  depoUser.push(
+    {
+      "user": newUser.nombreOpe,
+      "shift": newUser.turno,
+      "password": ""
+    }
+  )
+  fs.writeFile('../'+db+'/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
+    if (err) throw (err);
+  })
+  res.status(200).send({message:'Usuario cargado con éxito!'})
+}
 
-
+const newPz = (req,res) => {
+  const newPz = req.body
+  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
+  let piezas = JSON.parse(piezasRaw)
+  const found = piezas.findIndex (pz => {
+    return pz.articulo === newPz.codigo
+  });
+  if (found !== -1 ){
+    res.status(401).send({message:'LA PIEZA YA EXISTE'})
+    return
+  }
+  piezas.push({
+    "articulo": newPz.codigo,
+    "detalle": newPz.detalle,
+    "familia": newPz.familia,
+    "cantxPallet": newPz.cantxPallet,
+    "stockM": newPz.stockM
+  })
+  fs.writeFile('../'+db+'/piezasDeposito.json',JSON.stringify(piezas,null,2),function (err){
+    if (err) throw (err);
+  })
+  res.status(200).send({message:'Pieza cargada con éxito!'})
+}
 
 const login = (req,res)=>{
   let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
   let depoUser = JSON.parse(depoUserRaw)
-  console.log('first user: ',depoUser[0])
   const loginData = req.body
   console.log('Login data: ',loginData)
   const index = depoUser.findIndex(lider => {
@@ -44,11 +106,13 @@ const login = (req,res)=>{
   }
 }
 const uploadInput = (req,res)=>{
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let inputs = JSON.parse(inputsRaw)
   const depo = req.body
-  depoInputs.push(depo)
+  inputs.push(depo)
   depo.cantidad = (depo.cantidad || "")
   console.log('Datos ingresado', depo)
-  fs.writeFile('../'+db+'/depositoInputs.json',JSON.stringify(depoInputs,null,2),function (err){
+  fs.writeFile('../'+db+'/depositoInputs.json',JSON.stringify(inputs,null,2),function (err){
     if (err) throw (err);
   })
   let posIndex = depoTable.findIndex((pos)=>{
@@ -56,7 +120,8 @@ const uploadInput = (req,res)=>{
   })
   if (!depoTable[posIndex]){
     console.log('La estantería no existe')
-    res.status(401).end({message:'La estanteria no existe!'})
+    res.status(401).send({message:'La estanteria no existe!'})
+    return
   }
   else{
     console.log('Estanteria antes: ', depoTable[posIndex])
@@ -87,7 +152,8 @@ const uploadInput = (req,res)=>{
         }
         if (depoTable[posIndex].insumos.length > maxAmount){
           console.log('La estantería llego a su capcidad maxima de ' + maxAmount + ' unidades')
-          res.status(401).end({message:'Estanteria llena!'})
+          res.status(401).send({message:'La estantería llego a su capcidad maxima de ' + maxAmount + ' unidades'})
+          return
         }
 
         //Second looks if insmuos is empty
@@ -166,4 +232,4 @@ const uploadInput = (req,res)=>{
   res.send(depoTable[posIndex])
 }
 
-module.exports = {getTable, login, uploadInput, getPiezas}
+module.exports = {getTable, login, uploadInput, getPiezas , getUsers, newWorker , newPz}
