@@ -21,7 +21,6 @@ const getTable = (req,res)=>{
   let table = JSON.parse(tableRaw)
   res.send(table)
 }
-
 const getPiezas = (req, res) => {
   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
   let piezas = JSON.parse(piezasRaw)
@@ -87,7 +86,7 @@ const newPz = (req,res) => {
 const login = (req,res)=>{
   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
   let abasUser = JSON.parse(abasUserRaw)
-  console.log('first user: ',abasUser[0])
+  
   const loginData = req.body
   console.log('Login data: ',loginData)
   const index = abasUser.findIndex(lider => {
@@ -111,8 +110,11 @@ const login = (req,res)=>{
 }
 
 const uploadInput = (req,res)=>{
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
+  let abasTableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
+  let abasTable = JSON.parse(abasTableRaw)
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
+  
   const abas = req.body
   inputs.push(abas)
   console.log('Datos ingresado', abas)

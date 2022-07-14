@@ -8,7 +8,7 @@ const backup = () => {
   fs.writeFile('../backup/depoTable.json',JSON.stringify(table,null,2),function (err){
     if (err) throw (err);
   })
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
   fs.writeFile('../backup/depoUsers.json',JSON.stringify(inputs,null,2),function (err){
     if (err) throw (err);
@@ -106,8 +106,11 @@ const login = (req,res)=>{
   }
 }
 const uploadInput = (req,res)=>{
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let depoTableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
+  let depoTable = JSON.parse(depoTableRaw)
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
+  
   const depo = req.body
   inputs.push(depo)
   depo.cantidad = (depo.cantidad || "")

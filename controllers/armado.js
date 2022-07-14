@@ -1,11 +1,25 @@
 const db = require ('../config.js')
 
-const armadoUsers = require('../../'+db+'/armadoUsers.json');
 const armadoInputs = require ('../../'+db+'/armadoInputs.json')
 
 const fs = require('fs');
 
+const getUsers = (req, res) => {
+  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoUsers.json','utf8')
+  let users = JSON.parse(usersRaw)
+  res.send(users)
+}
+
+const getProductos = (req,res) => {
+  let productosRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/productos.json','utf8')
+  let productos = JSON.parse(productosRaw)
+  res.send(productos)
+}
+
 const uploadInputs = (req,res)=>{
+  let armadoInputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
+  let armadoInputs = JSON.parse(armadoInputsRaw)
+
   const siniestro = req.body
   armadoInputs.push(siniestro)
   console.log(siniestro)
@@ -15,6 +29,9 @@ const uploadInputs = (req,res)=>{
   res.send(siniestro)
 }
 const login = (req,res)=>{
+  let armadoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoUsers.json','utf8')
+  let armadoUsers = JSON.parse(armadoUserRaw)
+
   const loginData = req.body
   console.log('login data',loginData)
   const index = armadoUsers.findIndex(lider => {
@@ -38,4 +55,4 @@ const login = (req,res)=>{
   }
 }
 
-module.exports = {uploadInputs, login}
+module.exports = {uploadInputs, login, getUsers, getProductos}
