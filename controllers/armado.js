@@ -16,6 +16,13 @@ const getProductos = (req,res) => {
   res.send(productos)
 }
 
+const getInputs = (req,res) => {
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
+  let inputs = JSON.parse(inputsRaw)
+  res.send(inputs)
+}
+
+
 const uploadInputs = (req,res)=>{
   let armadoInputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
   let armadoInputs = JSON.parse(armadoInputsRaw)
@@ -55,4 +62,4 @@ const login = (req,res)=>{
   }
 }
 
-module.exports = {uploadInputs, login, getUsers, getProductos}
+module.exports = {uploadInputs, login, getUsers, getProductos, getInputs}
