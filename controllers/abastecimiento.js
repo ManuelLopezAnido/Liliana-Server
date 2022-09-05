@@ -166,12 +166,16 @@ const uploadInput = (req,res)=>{
       case 'down':
         //First, look if it is already in the position
         const indexDown = abasTable[posIndex].insumos.findIndex((insumo)=>{
+          console.log('index: ',insumo.codigo)
           return(
             insumo.codigo === abas.codigo
           )
         })
+        console.log('index down',indexDown)
         if (indexDown === -1){
-          res.status(401).end({message:'Este insumo no se encuentra en la estanteria!'})
+          console.log('Este insumo no se encuentra en la estanteria')
+          res.status(401).send({message:'Este insumo no se encuentra en la estanteria!'})
+          return
         } else {
           if (!abas.cantidad){
             const insumoToRemove = abasTable[posIndex].insumos[indexDown]
