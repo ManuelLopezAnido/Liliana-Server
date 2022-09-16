@@ -1,8 +1,18 @@
 const db = require ('../config.js')
 
-const armadoInputs = require ('../../'+db+'/armadoInputs.json')
+const fs = require('graceful-fs');
 
-const fs = require('fs');
+const backup = ()=>{
+  let armadoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
+  let armado = JSON.parse(armadoRaw)
+  fs.writeFile('../backup/armadoInputs.json',JSON.stringify(armado,null,2),function (err){
+    if (err) throw (err);
+  })
+}
+
+if (db === 'data samples' ) {
+  setInterval(backup,1000*3600)
+}
 
 const getUsers = (req, res) => {
   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoUsers.json','utf8')
@@ -21,7 +31,6 @@ const getInputs = (req,res) => {
   let inputs = JSON.parse(inputsRaw)
   res.send(inputs)
 }
-
 
 const uploadInputs = (req,res)=>{
   let armadoInputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')

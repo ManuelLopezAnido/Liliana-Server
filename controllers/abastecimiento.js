@@ -1,5 +1,5 @@
 const db = require ('../config.js')
-const fs = require('fs');
+const fs = require('graceful-fs');
 
 const backup = ()=>{
   let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
@@ -9,28 +9,32 @@ const backup = ()=>{
   })
   let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
-  fs.writeFile('../backup/abasUsers.json',JSON.stringify(inputs,null,2),function (err){
+  fs.writeFile('../backup/abasInputs.json',JSON.stringify(inputs,null,2),function (err){
     if (err) throw (err);
   })
 }
-
-setInterval(backup,1000*3600)
+if (db === 'data samples' ) {
+  setInterval(backup,1000*3600)
+}
 
 const getTable = (req,res)=>{
   let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
   let table = JSON.parse(tableRaw)
   res.send(table)
 }
+
 const getPiezas = (req, res) => {
   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
   let piezas = JSON.parse(piezasRaw)
   res.send(piezas)
 }
+
 const getUsers = (req, res) => {
   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
   let users = JSON.parse(usersRaw)
   res.send(users)
 }
+
 const getInputs = (req,res) => {
   let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
@@ -125,8 +129,9 @@ const uploadInput = (req,res)=>{
     return(pos.estanteria===abas.estanteria && pos.posicion===abas.posicion && pos.altura===abas.altura)
   })
   if (!abasTable[posIndex]){
-    res.status(401).end({message:'La estanteria no existe!'})
+    res.status(401).send({message:'La estanteria no existe!'})
     console.log('La estantería no existe')
+    return
   }
   else{
     console.log('Estanteria antes: ', abasTable[posIndex])
@@ -181,6 +186,7 @@ const uploadInput = (req,res)=>{
             const insumoToRemove = abasTable[posIndex].insumos[indexDown]
             abasTable[posIndex].insumos.splice(indexDown,1)
             res.status(200).send(insumoToRemove)
+            return
           } 
           else {
             abasTable[posIndex].insumos[indexDown].cantidad -= abas.cantidad

@@ -1,5 +1,5 @@
 const db = require ('../config.js')
-const fs = require('fs');
+const fs = require('graceful-fs');
 
 
 const backup = () => {
@@ -10,12 +10,15 @@ const backup = () => {
   })
   let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
-  fs.writeFile('../backup/depoUsers.json',JSON.stringify(inputs,null,2),function (err){
+  fs.writeFile('../backup/depoInputs.json',JSON.stringify(inputs,null,2),function (err){
     if (err) throw (err);
   })
 }
 
-setInterval(backup,1000*3600)
+if (db === 'data samples' ) {
+  setInterval(backup,1000*3600)
+}
+
 
 const getTable = (req,res)=>{
   let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
@@ -197,11 +200,14 @@ const uploadInput = (req,res)=>{
         })
         if (indexDown === -1){
           res.status(401).send({message:'Este insumo no se encuentra en la estanteria!'})
-        } else {
+          return
+        } 
+        else {
           if (!depo.cantidad){
             const insumoToRemove = depoTable[posIndex].insumos[indexDown]
             depoTable[posIndex].insumos.splice(indexDown,1)
             res.status(200).send(insumoToRemove)
+            return
           } 
           else {
             depoTable[posIndex].insumos[indexDown].cantidad -= depo.cantidad
@@ -226,6 +232,7 @@ const uploadInput = (req,res)=>{
         break
       default:
         res.status(401).send({message:'Ingreso no válido'})
+        return
     }
     console.log('La estanteria despues: ', depoTable[posIndex])
   }

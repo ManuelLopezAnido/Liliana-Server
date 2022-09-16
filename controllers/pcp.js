@@ -1,9 +1,9 @@
 const db = require ('../config.js')
 
-const dataProd = require ('../../'+db+'/productionTable.json')
-
 const getTable = (req,res)=>{
-  res.send(dataProd)
+  let productionInyRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/productionIny.json','utf8')
+  let productionIny = JSON.parse(productionInyRaw)
+  res.send(productionIny)
 }
 
 module.exports = {getTable}

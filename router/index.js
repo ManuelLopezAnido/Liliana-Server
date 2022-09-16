@@ -7,6 +7,7 @@ const pcpRouter = require ('./pcp.js')
 const depositoRouter = require('./deposito.js')
 const inyeccionRouter = require ('./inyeccion.js')
 const procesosRouter = require('./procesos.js')
+const dataRouter = require('./data.js')
 
 
 router.use('/abastecimiento',abastecimientoRouter)
@@ -14,7 +15,8 @@ router.use('/armado',armadoRouter)
 router.use('/pcp',pcpRouter)
 router.use('/deposito',depositoRouter)
 router.use('/inyeccion',inyeccionRouter)
-router.use('/procesos', procesosRouter)
+router.use('/procesos',procesosRouter)
+router.use('/data',dataRouter)
 router.get('/time', (req, res) => res.send({
   time: Date.now(),
 }));

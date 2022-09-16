@@ -1,12 +1,10 @@
 const db = require ('../config.js')
-
-const dataProd = require ('../../'+db+'/productionTable.json')
-
-
-const fs = require('fs');
+const fs = require('graceful-fs');
 
 const getTable = (req,res)=>{
-  res.send(dataProd)
+  let productionInyRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/productionIny.json','utf8')
+  let productionIny = JSON.parse(productionInyRaw)
+  res.send(productionIny)
 }
 const getUsers = (req,res)=>{
   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/inyeccionUsers.json','utf8')
