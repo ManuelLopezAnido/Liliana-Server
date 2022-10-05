@@ -10,15 +10,13 @@ const login = (req,res)=>{
   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/procesosUsers.json','utf8')
   let prosUser = JSON.parse(usersRaw)
   const loginData = req.body
-  console.log('USERS: ', prosUser)
-  console.log('LOGIN DATA: ',loginData)
+
   const index = prosUser.findIndex(lider => {
     return(
     lider.user===loginData.user
     )
   })
-  console.log('index: ',index)
-  console.log('password: ',prosUser[index]?.password)
+
   if (index === -1) {
     res.status(401).send({message:'El usuario no existe'})
     return
@@ -72,7 +70,10 @@ const putFormsPz = (req,res) => {
     res.status(401).send({message:'EL FORMULARIO NO EXISTE'})
     return
   } 
-  forms[ind] = updateForm
+  for (prop in updateForm) {
+    forms[ind][prop] = updateForm[prop]
+  }
+
   fs.writeFile('../'+db+'/procesosFormsPz.json',JSON.stringify(forms,null,2),function (err){
     if (err) throw (err);
   })
@@ -124,6 +125,7 @@ const postFormsMol = (req,res) => {
 }
 const putFormsMol= (req,res) => {
   const updateForm = req.body
+  
   let formsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/procesosFormsMol.json','utf8')
   let forms = JSON.parse(formsRaw)
   const ind = forms.findIndex((form)=>{
@@ -135,7 +137,10 @@ const putFormsMol= (req,res) => {
     res.status(401).send({message:'EL FORMULARIO NO EXISTE'})
     return
   } 
-  forms[ind] = updateForm
+
+  for (prop in updateForm) {
+    forms[ind][prop] = updateForm[prop]
+  }
   fs.writeFile('../'+db+'/procesosFormsMol.json',JSON.stringify(forms,null,2),function (err){
     if (err) throw (err);
   })
@@ -143,6 +148,7 @@ const putFormsMol= (req,res) => {
 }
 const deleteFormsMol = (req,res) => {
   const idF = req.params.id
+ 
   let formsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/procesosFormsMol.json','utf8')
   let forms = JSON.parse(formsRaw)
   const ind = forms.findIndex((form)=>{
@@ -155,6 +161,7 @@ const deleteFormsMol = (req,res) => {
     console.log('El formulario no existe')
     return
   } 
+  
   forms.splice(ind,1)
   fs.writeFile('../'+db+'/procesosFormsMol.json',JSON.stringify(forms,null,2),function (err){
     if (err) throw (err);
@@ -197,7 +204,9 @@ const putFormsMaq = (req,res) => {
     res.status(401).send({message:'EL FORMULARIO NO EXISTE'})
     return
   } 
-  forms[ind] = updateForm
+  for (prop in updateForm) {
+    forms[ind][prop] = updateForm[prop]
+  }
   fs.writeFile('../'+db+'/procesosFormsMaq.json',JSON.stringify(forms,null,2),function (err){
     if (err) throw (err);
   })

@@ -88,7 +88,7 @@ const login = (req,res)=>{
   let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
   let depoUser = JSON.parse(depoUserRaw)
   const loginData = req.body
-  console.log('Login data: ',loginData)
+ 
   const index = depoUser.findIndex(lider => {
     return(
     lider.user===loginData.lider
@@ -101,7 +101,7 @@ const login = (req,res)=>{
     })
     res.send(depoUser[index])
   } else if(depoUser[index].password === loginData.contraseña) {
-    console.log('Contraseña correcta')
+    console.log('Contraseña correcta: ',loginData.lider)
     res.send(depoUser[index])  
   } else {
     console.log('Contraseña incorrecta')
@@ -130,7 +130,7 @@ const uploadInput = (req,res)=>{
     return
   }
   else{
-    console.log('Estanteria antes: ', depoTable[posIndex])
+   
     depoTable[posIndex].time = depo.time
     depoTable[posIndex].date = depo.date
     depoTable[posIndex].radio = depo.radio
@@ -179,7 +179,7 @@ const uploadInput = (req,res)=>{
             ['comentarios']:depo.comentarios
           })
         } else {
-          console.log(+depoTable[posIndex].insumos[indexAdd].cantidad , depo.cantidad )
+          
           depoTable[posIndex].insumos[indexAdd].cantidad = +depoTable[posIndex].insumos[indexAdd].cantidad + depo.cantidad
           depoTable[posIndex].insumos[indexAdd].comentarios = depo.comentarios
         }
@@ -204,10 +204,7 @@ const uploadInput = (req,res)=>{
         } 
         else {
           if (!depo.cantidad){
-            const insumoToRemove = depoTable[posIndex].insumos[indexDown]
             depoTable[posIndex].insumos.splice(indexDown,1)
-            res.status(200).send(insumoToRemove)
-            return
           } 
           else {
             depoTable[posIndex].insumos[indexDown].cantidad -= depo.cantidad
@@ -234,12 +231,12 @@ const uploadInput = (req,res)=>{
         res.status(401).send({message:'Ingreso no válido'})
         return
     }
-    console.log('La estanteria despues: ', depoTable[posIndex])
   }
   fs.writeFile('../'+db+'/depositoTable.json',JSON.stringify(depoTable,null,2),function (err){
     if (err) throw (err);
   })
-  res.send(depoTable[posIndex])
+  console.log('Cambio en Deposito exitoso')
+  res.status(200).send({message:'Exito'})
 }
 
 module.exports = {getTable, login, uploadInput, getPiezas , getUsers, newWorker , newPz}
