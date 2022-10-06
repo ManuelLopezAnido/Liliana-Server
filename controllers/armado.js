@@ -5,7 +5,7 @@ const fs = require('graceful-fs');
 const backup = ()=>{
   let armadoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
   let armado = JSON.parse(armadoRaw)
-  fs.writeFile('../backup/armadoInputs.json',JSON.stringify(armado,null,2),function (err){
+  fs.writeFile('../../backup/armadoInputs.json',JSON.stringify(armado,null,2),function (err){
     if (err) throw (err);
   })
 }
@@ -15,37 +15,31 @@ if (db === 'data samples' ) {
 }
 
 const getUsers = (req, res) => {
-  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoUsers.json','utf8')
+  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armado/armadoUsers.json','utf8')
   let users = JSON.parse(usersRaw)
   res.send(users)
 }
 
-const getProductos = (req,res) => {
-  let productosRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/productos.json','utf8')
-  let productos = JSON.parse(productosRaw)
-  res.send(productos)
-}
-
 const getInputs = (req,res) => {
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armado/armadoInputs.json','utf8')
   let inputs = JSON.parse(inputsRaw)
   res.send(inputs)
 }
 
 const uploadInputs = (req,res)=>{
-  let armadoInputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
+  let armadoInputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armado/armadoInputs.json','utf8')
   let armadoInputs = JSON.parse(armadoInputsRaw)
 
   const siniestro = req.body
   armadoInputs.push(siniestro)
   console.log(siniestro)
-  fs.writeFile('../'+db+'/armadoInputs.json',JSON.stringify(armadoInputs,null,2),function (err){
+  fs.writeFile('../'+db+'/armado/armadoInputs.json',JSON.stringify(armadoInputs,null,2),function (err){
     if (err) throw (err);
   })
   res.send(siniestro)
 }
 const login = (req,res)=>{
-  let armadoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoUsers.json','utf8')
+  let armadoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armado/armadoUsers.json','utf8')
   let armadoUsers = JSON.parse(armadoUserRaw)
 
   const loginData = req.body
@@ -58,7 +52,7 @@ const login = (req,res)=>{
   console.log('index: ',index)
   if (armadoUsers[index].password === '') {
     armadoUsers[index].password = loginData.contraseña
-    fs.writeFile('../'+db+'/armadoUsers.json',JSON.stringify(armadoUsers,null,2),function (err){
+    fs.writeFile('../'+db+'/armado/armadoUsers.json',JSON.stringify(armadoUsers,null,2),function (err){
       if (err) throw (err);
     })
     res.send(armadoUsers[index])
@@ -71,4 +65,4 @@ const login = (req,res)=>{
   }
 }
 
-module.exports = {uploadInputs, login, getUsers, getProductos, getInputs}
+module.exports = {uploadInputs, login, getUsers, getInputs}

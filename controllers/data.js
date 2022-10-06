@@ -3,19 +3,24 @@ const db = require ('../config.js')
 const fs = require('graceful-fs');
 
 const getMachines = (req,res)=>{
-  let maqRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/maquinas.json','utf8')
+  let maqRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/maquinas.json','utf8')
   let maqs = JSON.parse(maqRaw)
   res.send(maqs)
 }
 const getPzAbas = (req,res)=>{
-  let pzAbasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
+  let pzAbasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/piezasAbastecimiento.json','utf8')
   let pz = JSON.parse(pzAbasRaw)
   res.send(pz)
 }
 const getPzDepo = (req,res)=>{
-  let pzDepoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
+  let pzDepoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/piezasDeposito.json','utf8')
   let pz = JSON.parse(pzDepoRaw)
   res.send(pz)
+}
+const getProductos = (req,res) => {
+  let productosRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/productos.json','utf8')
+  let productos = JSON.parse(productosRaw)
+  res.send(productos)
 }
 
 const getEmailsProcesos = (req,res)=>{
@@ -50,8 +55,9 @@ const getMatriceriaUsers = (req,res) => {
   res.send(users)
 }
 module.exports = {
-  getMachines, getPzAbas, getPzDepo, 
+  getMachines, getPzAbas, getPzDepo, getProductos,
   getEmailsProcesos, postEmailsProcesos, 
   getEmailsInyeccion, postEmailsInyeccion,
   getMatriceriaUsers
+
 }
