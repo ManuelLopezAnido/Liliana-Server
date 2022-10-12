@@ -25,64 +25,65 @@ const getTable = (req,res)=>{
   let table = JSON.parse(tableRaw)
   res.send(table)
 }
-const getPiezas = (req, res) => {
-  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
-  let piezas = JSON.parse(piezasRaw)
-  res.send(piezas)
-}
-const getUsers = (req, res) => {
-  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
-  let users = JSON.parse(usersRaw)
-  res.send(users)
-}
-const newWorker = (req,res) => {
-  const newUser = req.body
-  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
-  let depoUser = JSON.parse(depoUserRaw)
-  const found = depoUser.findIndex (user => {
-    return user.user === newUser.nombreOpe
-  });
-  if (found !== -1 ){
-    console.log('El usuario ya existe')
-    res.status(401).send({message:'EL USUARIO YA EXISTE'})
-    return
-  }
-  depoUser.push(
-    {
-      "user": newUser.nombreOpe,
-      "shift": newUser.turno,
-      "password": ""
-    }
-  )
-  fs.writeFile('../'+db+'/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
-    if (err) throw (err);
-  })
-  res.status(200).send({message:'Usuario cargado con éxito!'})
-}
+// const getPiezas = (req, res) => {
+//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
+//   let piezas = JSON.parse(piezasRaw)
+//   res.send(piezas)
+// }
+// const newPz = (req,res) => {
+//   const newPz = req.body
+//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
+//   let piezas = JSON.parse(piezasRaw)
+//   const found = piezas.findIndex (pz => {
+//     return pz.articulo === newPz.codigo
+//   });
+//   if (found !== -1 ){
+//     res.status(401).send({message:'LA PIEZA YA EXISTE'})
+//     return
+//   }
+//   piezas.push({
+//     "articulo": newPz.codigo,
+//     "detalle": newPz.detalle,
+//     "familia": newPz.familia,
+//     "cantxPallet": newPz.cantxPallet,
+//     "stockM": newPz.stockM
+//   })
+//   fs.writeFile('../'+db+'/piezasDeposito.json',JSON.stringify(piezas,null,2),function (err){
+//     if (err) throw (err);
+//   })
+//   res.status(200).send({message:'Pieza cargada con éxito!'})
+// }
+// const getUsers = (req, res) => {
+//   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
+//   let users = JSON.parse(usersRaw)
+//   res.send(users)
+// }
+// const newWorker = (req,res) => {
+//   const newUser = req.body
+//   let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
+//   let depoUser = JSON.parse(depoUserRaw)
+//   const found = depoUser.findIndex (user => {
+//     return user.user === newUser.nombreOpe
+//   });
+//   if (found !== -1 ){
+//     console.log('El usuario ya existe')
+//     res.status(401).send({message:'EL USUARIO YA EXISTE'})
+//     return
+//   }
+//   depoUser.push(
+//     {
+//       "user": newUser.nombreOpe,
+//       "shift": newUser.turno,
+//       "password": ""
+//     }
+//   )
+//   fs.writeFile('../'+db+'/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
+//     if (err) throw (err);
+//   })
+//   res.status(200).send({message:'Usuario cargado con éxito!'})
+// }
 
-const newPz = (req,res) => {
-  const newPz = req.body
-  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
-  let piezas = JSON.parse(piezasRaw)
-  const found = piezas.findIndex (pz => {
-    return pz.articulo === newPz.codigo
-  });
-  if (found !== -1 ){
-    res.status(401).send({message:'LA PIEZA YA EXISTE'})
-    return
-  }
-  piezas.push({
-    "articulo": newPz.codigo,
-    "detalle": newPz.detalle,
-    "familia": newPz.familia,
-    "cantxPallet": newPz.cantxPallet,
-    "stockM": newPz.stockM
-  })
-  fs.writeFile('../'+db+'/piezasDeposito.json',JSON.stringify(piezas,null,2),function (err){
-    if (err) throw (err);
-  })
-  res.status(200).send({message:'Pieza cargada con éxito!'})
-}
+
 
 const login = (req,res)=>{
   let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
@@ -239,4 +240,4 @@ const uploadInput = (req,res)=>{
   res.status(200).send({message:'Exito'})
 }
 
-module.exports = {getTable, login, uploadInput, getPiezas , getUsers, newWorker , newPz}
+module.exports = {getTable, login, uploadInput}

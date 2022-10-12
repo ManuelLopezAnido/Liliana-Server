@@ -3,11 +3,15 @@ const data = require('../controllers/data.js');
 
 router.get('/machines', data.getMachines)
 
-router.get('/pzabas', data.getPzAbas)
-router.post('/pzabas', data.postPzAbas)
+router.get('/piezas/abastecimiento', data.getPzAbas)
+router.post('/piezas/abastecimiento', data.postPzAbas)
+router.get('/users/abastecimiento', data.getUsersAbas)
+router.post('/users/abastecimiento', data.postUserAbas)
 
-router.get('/pzdepo', data.getPzDepo)
-router.post('/pzdepo', data.postPzDepo)
+router.get('/piezas/deposito', data.getPzDepo)
+router.post('/piezas/deposito', data.postPzDepo)
+router.get('/users/deposito', data.getUsersDepo)
+router.post('/users/deposito', data.postUserDepo)
 
 router.get('/productos', data.getProductos)
 router.post('/productos', data.postProductos)

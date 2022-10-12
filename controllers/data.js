@@ -6,6 +6,8 @@ const getMachines = (req,res)=>{
   let maqs = JSON.parse(maqRaw)
   res.send(maqs)
 }
+
+
 const getPzAbas = (req,res)=>{
   let pzAbasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/piezasAbastecimiento.json','utf8')
   let pz = JSON.parse(pzAbasRaw)
@@ -30,8 +32,8 @@ const postPzAbas = (req,res)=>{
     mes='PIEZA NUEVA AGREGADA EXITOSAMENTE'
   } else {
     piezas[found].familia = newPz.familia
-    piezas[found].familia = newPz.cantxPallet
-    piezas[found].familia = newPz.stockM
+    piezas[found].cantxPallet = newPz.cantxPallet
+    piezas[found].stockM = newPz.stockM
     mes='PIEZA EDITADA EXITOSAMENTE'
   }
   fs.writeFile('../'+db+'/datos/piezasAbastecimiento.json',JSON.stringify(piezas,null,2),function (err){
@@ -40,6 +42,34 @@ const postPzAbas = (req,res)=>{
   res.status(200).send({message:mes})
   return
 }
+const getUsersAbas = (req, res) => {
+  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
+  let users = JSON.parse(usersRaw)
+  res.send(users)
+}
+const postUserAbas = (req,res) => {
+  const newUser = req.body
+  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
+  let abasUser = JSON.parse(abasUserRaw)
+  const found = abasUser.findIndex (user => {
+    return user.user === newUser.nombreOpe
+  });
+  if (found !== -1 ){
+    res.status(401).send({message:'EL USUARIO YA EXISTE'})
+    return
+  }
+  abasUser.push(
+    {
+      "user": newUser.nombreOpe,
+      "shift": newUser.turno,
+      "password": ""
+    }
+  )
+  fs.writeFile('../'+db+'/datos/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+    if (err) throw (err);
+  })
+}
+
 
 const getPzDepo = (req,res)=>{
   let pzDepoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/piezasDeposito.json','utf8')
@@ -75,6 +105,34 @@ const postPzDepo = (req,res)=>{
   res.status(200).send({message:mes})
   return
 }
+const getUsersDepo = (req, res) => {
+  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
+  let users = JSON.parse(usersRaw)
+  res.send(users)
+}
+const postUserDepo = (req,res) => {
+  const newUser = req.body
+  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
+  let abasUser = JSON.parse(abasUserRaw)
+  const found = abasUser.findIndex (user => {
+    return user.user === newUser.nombreOpe
+  });
+  if (found !== -1 ){
+    res.status(401).send({message:'EL USUARIO YA EXISTE'})
+    return
+  }
+  abasUser.push(
+    {
+      "user": newUser.nombreOpe,
+      "shift": newUser.turno,
+      "password": ""
+    }
+  )
+  fs.writeFile('../'+db+'/datos/depositoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+    if (err) throw (err);
+  })
+}
+
 
 const getProductos = (req,res) => {
   let productosRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/productos2.json','utf8')
@@ -133,7 +191,9 @@ const getMatriceriaMoldes = (req, res) => {
 module.exports = {
   getMachines, 
   getPzAbas, postPzAbas, 
+  getUsersAbas, postUserAbas,
   getPzDepo, postPzDepo,
+  getUsersDepo, postUserDepo,
   getProductos, postProductos,
   getEmailsProcesos, postEmailsProcesos, 
   getEmailsInyeccion, postEmailsInyeccion,

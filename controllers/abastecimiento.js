@@ -28,41 +28,6 @@ const getTable = (req,res)=>{
 //   let piezas = JSON.parse(piezasRaw)
 //   res.send(piezas)
 // }
-
-const getUsers = (req, res) => {
-  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
-  let users = JSON.parse(usersRaw)
-  res.send(users)
-}
-const newWorker = (req,res) => {
-  const newUser = req.body
-  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
-  let abasUser = JSON.parse(abasUserRaw)
-  const found = abasUser.findIndex (user => {
-    return user.user === newUser.nombreOpe
-  });
-  if (found !== -1 ){
-    res.status(401).send({message:'EL USUARIO YA EXISTE'})
-    return
-  }
-  abasUser.push(
-    {
-      "user": newUser.nombreOpe,
-      "shift": newUser.turno,
-      "password": ""
-    }
-  )
-  fs.writeFile('../'+db+'/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
-    if (err) throw (err);
-  })
-}
-
-const getInputs = (req,res) => {
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  res.send(inputs)
-}
-
 // const newPz = (req,res) => {
 //   const newPz = req.body
 //   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
@@ -92,6 +57,39 @@ const getInputs = (req,res) => {
 //   res.status(200).send({message:mes})
 //   return
 // }
+// const getUsers = (req, res) => {
+//   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
+//   let users = JSON.parse(usersRaw)
+//   res.send(users)
+// }
+// const newWorker = (req,res) => {
+//   const newUser = req.body
+//   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
+//   let abasUser = JSON.parse(abasUserRaw)
+//   const found = abasUser.findIndex (user => {
+//     return user.user === newUser.nombreOpe
+//   });
+//   if (found !== -1 ){
+//     res.status(401).send({message:'EL USUARIO YA EXISTE'})
+//     return
+//   }
+//   abasUser.push(
+//     {
+//       "user": newUser.nombreOpe,
+//       "shift": newUser.turno,
+//       "password": ""
+//     }
+//   )
+//   fs.writeFile('../'+db+'/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+//     if (err) throw (err);
+//   })
+// }
+
+const getInputs = (req,res) => {
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
+  let inputs = JSON.parse(inputsRaw)
+  res.send(inputs)
+}
 
 const login = (req,res)=>{
   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
@@ -236,4 +234,4 @@ const uploadInput = (req,res)=>{
   res.send(abasTable[posIndex])
 }
 
-module.exports = {getTable, login, uploadInput, getInputs, getUsers, newWorker}
+module.exports = {getTable, login, uploadInput, getInputs}
