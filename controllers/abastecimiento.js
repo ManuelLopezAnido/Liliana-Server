@@ -23,24 +23,17 @@ const getTable = (req,res)=>{
   res.send(table)
 }
 
-const getPiezas = (req, res) => {
-  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
-  let piezas = JSON.parse(piezasRaw)
-  res.send(piezas)
-}
+// const getPiezas = (req, res) => {
+//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
+//   let piezas = JSON.parse(piezasRaw)
+//   res.send(piezas)
+// }
 
 const getUsers = (req, res) => {
   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
   let users = JSON.parse(usersRaw)
   res.send(users)
 }
-
-const getInputs = (req,res) => {
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  res.send(inputs)
-}
-
 const newWorker = (req,res) => {
   const newUser = req.body
   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
@@ -64,28 +57,41 @@ const newWorker = (req,res) => {
   })
 }
 
-const newPz = (req,res) => {
-  const newPz = req.body
-  let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
-  let piezas = JSON.parse(piezasRaw)
-  const found = piezas.findIndex (pz => {
-    return pz.articulo === newPz.codigo
-  });
-  if (found !== -1 ){
-    res.status(401).send({message:'LA PIEZA YA EXISTE'})
-    return
-  }
-  piezas.push({
-    "articulo": newPz.codigo,
-    "detalle": newPz.detalle,
-    "familia": newPz.familia,
-    "cantxPallet": newPz.cantxPallet,
-    "stockM": newPz.stockM
-  })
-  fs.writeFile('../'+db+'/piezasAbastecimiento.json',JSON.stringify(piezas,null,2),function (err){
-    if (err) throw (err);
-  })
+const getInputs = (req,res) => {
+  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
+  let inputs = JSON.parse(inputsRaw)
+  res.send(inputs)
 }
+
+// const newPz = (req,res) => {
+//   const newPz = req.body
+//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
+//   let piezas = JSON.parse(piezasRaw)
+//   const found = piezas.findIndex (pz => {
+//     return pz.articulo === newPz.codigo
+//   });
+//   let mes = ''
+//   if (found === -1 ){
+//     piezas.push({
+//       "articulo": newPz.codigo,
+//       "detalle": newPz.detalle,
+//       "familia": newPz.familia,
+//       "cantxPallet": newPz.cantxPallet,
+//       "stockM": newPz.stockM
+//     })
+//     mes='PIEZA NUEVA AGREGADA EXITOSAMENTE'
+//   } else {
+//     piezas[found].familia = newPz.familia
+//     piezas[found].familia = newPz.cantxPallet
+//     piezas[found].familia = newPz.stockM
+//     mes='PIEZA EDITADA EXITOSAMENTE'
+//   }
+//   fs.writeFile('../'+db+'/piezasAbastecimiento.json',JSON.stringify(piezas,null,2),function (err){
+//     if (err) throw (err);
+//   })
+//   res.status(200).send({message:mes})
+//   return
+// }
 
 const login = (req,res)=>{
   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
@@ -230,4 +236,4 @@ const uploadInput = (req,res)=>{
   res.send(abasTable[posIndex])
 }
 
-module.exports = {getTable, login, uploadInput, getInputs, getPiezas, getUsers, newWorker, newPz}
+module.exports = {getTable, login, uploadInput, getInputs, getUsers, newWorker}

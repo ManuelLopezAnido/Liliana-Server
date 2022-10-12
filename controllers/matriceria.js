@@ -7,11 +7,11 @@ const getTable = (req,res)=>{
   let table = JSON.parse(tableRaw)
   res.send(table)
 }
-const getMoldes = (req, res) => {
-  let moldesRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/matriceria/moldesMatriceria.json','utf8')
-  let moldes = JSON.parse(moldesRaw)
-  res.send(moldes)
-}
+// const getMoldes = (req, res) => {
+//   let moldesRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/matriceria/moldesMatriceria.json','utf8')
+//   let moldes = JSON.parse(moldesRaw)
+//   res.send(moldes)
+// }
 
 const uploadInput = (req,res)=>{
   let moldesTableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/matriceria/moldesTable.json','utf8')
@@ -143,4 +143,4 @@ const uploadInput = (req,res)=>{
   res.status(200).send({message:'Exito'})
 }
 
-module.exports = {getTable, uploadInput, getMoldes}
+module.exports = {getTable, uploadInput}

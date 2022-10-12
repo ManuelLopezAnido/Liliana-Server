@@ -9,6 +9,7 @@ const inyeccionRouter = require ('./inyeccion.js')
 const procesosRouter = require('./procesos.js')
 const matriceriaRouter = require('./matriceria.js')
 const dataRouter = require('./data.js')
+const sendEmailsRouter = require('./sendEmails.js')
 
 
 router.use('/abastecimiento',abastecimientoRouter)
@@ -19,6 +20,7 @@ router.use('/inyeccion',inyeccionRouter)
 router.use('/procesos',procesosRouter)
 router.use('/matriceria',matriceriaRouter)
 router.use('/data',dataRouter)
+router.use('/sendEmails',sendEmailsRouter)
 router.get('/time', (req, res) => res.send({
   time: Date.now(),
 }));
