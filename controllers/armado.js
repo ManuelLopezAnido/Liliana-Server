@@ -3,9 +3,9 @@ const db = require ('../config.js')
 const fs = require('graceful-fs');
 
 const backup = ()=>{
-  let armadoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armadoInputs.json','utf8')
+  let armadoRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/armado/armadoInputs.json','utf8')
   let armado = JSON.parse(armadoRaw)
-  fs.writeFile('../../backup/armadoInputs.json',JSON.stringify(armado,null,2),function (err){
+  fs.writeFile('../backup/armadoInputs.json',JSON.stringify(armado,null,2),function (err){
     if (err) throw (err);
   })
 }

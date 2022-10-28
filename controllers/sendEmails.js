@@ -2,10 +2,26 @@ const db = require ('../config.js')
 const fs = require('graceful-fs');
 const nodemailer = require("nodemailer");
 
-const sendEmails = async (res,area) =>{
+const sendEmails = async (res,area,body) =>{
   //geting list of emails
   console.log('area: ',area)
-  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emailsProcesos.json','utf8')
+
+  let emailsRaw
+  switch (area) {
+    case "moldes":
+      emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/inyeccionMoldes.json','utf8')
+    break
+    case "maquinas":
+      emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/inyeccionMaquinas.json','utf8')
+    break
+    case "procesos":
+      emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/procesos.json','utf8')
+    break
+    default:
+      res.status(401).send({message:'Error en el envio'})
+    return
+  }
+
   let emails = JSON.parse(emailsRaw)
   listOfEmails = emails.map((email)=>{
     return(
@@ -16,8 +32,8 @@ const sendEmails = async (res,area) =>{
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: "mlopez@liliana.com.ar", // generated ethereal user
-      pass: "123456.a", // generated ethereal password
+      user: "reparaciones@liliana.com.ar", // generated ethereal user
+      pass: "REPARACIONES_789_F1&/", // generated ethereal password
     },
   });
 
@@ -26,7 +42,7 @@ const sendEmails = async (res,area) =>{
     to: listOfEmails, // list of receivers
     subject: "Pruebas envio correo automaitico", // Subject line
     text: "-", // plain text body
-    html: "<p>Esto es un bot <br/> Disculpe las molestias</p>", // html body
+    html: body.message, // html body
   });
 
   console.log("Message sent: %s", info.messageId);
@@ -41,8 +57,9 @@ const sendEmails = async (res,area) =>{
 
 const matrices = (req,res) => {
   const area = req.params.area
+  const emailBody = req.body
   try {
-    sendEmails(res,area)
+    sendEmails(res,area,emailBody)
     .then((res)=>{
       res.status(200).send({message:'Envio exitoso'})
       console.log('Envio de emails exitoso')

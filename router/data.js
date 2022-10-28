@@ -20,8 +20,11 @@ router.post('/productos', data.postProductos)
 router.get('/emails/procesos',data.getEmailsProcesos)
 router.post('/emails/procesos',data.postEmailsProcesos)
 
-router.get('/emails/inyeccion',data.getEmailsInyeccion)
-router.post('/emails/inyeccion',data.postEmailsInyeccion)
+router.get('/emails/inyeccion/maquinas',data.getEmailsInyeccionMaq)
+router.post('/emails/inyeccion/maquinas',data.postEmailsInyeccionMaq)
+
+router.get('/emails/inyeccion/moldes',data.getEmailsInyeccionMol)
+router.post('/emails/inyeccion/moldes',data.postEmailsInyeccionMol)
 
 router.get('/matriceria/users',data.getMatriceriaUsers)
 router.get('/matriceria/moldes',data.getMatriceriaMoldes)

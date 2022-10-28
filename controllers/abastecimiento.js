@@ -92,7 +92,7 @@ const getInputs = (req,res) => {
 }
 
 const login = (req,res)=>{
-  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
+  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
   let abasUser = JSON.parse(abasUserRaw)
   
   const loginData = req.body
@@ -104,7 +104,7 @@ const login = (req,res)=>{
   })
   if (abasUser[index].password === "") {
     abasUser[index].password = loginData.contraseña
-    fs.writeFile('../'+db+'/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+    fs.writeFile('../'+db+'/datos/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
       if (err) throw (err);
     })
     res.send(abasUser[index])

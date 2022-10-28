@@ -144,7 +144,7 @@ const postProductos = (req,res)=>{
   let productosRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/productos2.json','utf8')
   let productos = JSON.parse(productosRaw)
   productos.push(newProd)
-  fs.writeFile('../'+db+'/datos/productos2.json',JSON.stringify(piezas,null,2),function (err){
+  fs.writeFile('../'+db+'/datos/productos2.json',JSON.stringify(productos,null,2),function (err){
     if (err) throw (err);
   })
   res.status(200).send({message:'Producto nuevo agregado'})
@@ -153,26 +153,38 @@ const postProductos = (req,res)=>{
 
 
 const getEmailsProcesos = (req,res)=>{
-  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emailsProcesos.json','utf8')
+  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/procesos.json','utf8')
   let emails = JSON.parse(emailsRaw)
   res.send(emails)
 }
 const postEmailsProcesos = (req,res)=>{
   const newEmials = req.body
-  fs.writeFile('../'+db+'/emailsProcesos.json',JSON.stringify(newEmials,null,2),function (err){
+  fs.writeFile('../'+db+'/emails/procesos.json',JSON.stringify(newEmials,null,2),function (err){
     if (err) throw (err);
   })
   res.status(200).send({message:'Los mails fueron actualizados con éxito'})
 }
 
-const getEmailsInyeccion = (req,res) => {
-  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emailsInyeccion.json','utf8')
+const getEmailsInyeccionMaq = (req,res) => {
+  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/inyeccionMaquinas.json','utf8')
   let emails = JSON.parse(emailsRaw)
   res.send(emails)
 }
-const postEmailsInyeccion = (req,res)=>{
+const postEmailsInyeccionMaq = (req,res)=>{
   const newEmials = req.body
-  fs.writeFile('../'+db+'/emailsInyeccion.json',JSON.stringify(newEmials,null,2),function (err){
+  fs.writeFile('../'+db+'/emails/inyeccionMaquinas.json',JSON.stringify(newEmials,null,2),function (err){
+    if (err) throw (err);
+  })
+  res.status(200).send({message:'Los mails fueron actualizados con éxito'})
+}
+const getEmailsInyeccionMol = (req,res) => {
+  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/inyeccionMoldes.json','utf8')
+  let emails = JSON.parse(emailsRaw)
+  res.send(emails)
+}
+const postEmailsInyeccionMol = (req,res)=>{
+  const newEmials = req.body
+  fs.writeFile('../'+db+'/emails/inyeccionMoldes.json',JSON.stringify(newEmials,null,2),function (err){
     if (err) throw (err);
   })
   res.status(200).send({message:'Los mails fueron actualizados con éxito'})
@@ -196,7 +208,8 @@ module.exports = {
   getUsersDepo, postUserDepo,
   getProductos, postProductos,
   getEmailsProcesos, postEmailsProcesos, 
-  getEmailsInyeccion, postEmailsInyeccion,
+  getEmailsInyeccionMaq, postEmailsInyeccionMaq,
+  getEmailsInyeccionMol, postEmailsInyeccionMol,
   getMatriceriaUsers, getMatriceriaMoldes
 
 }

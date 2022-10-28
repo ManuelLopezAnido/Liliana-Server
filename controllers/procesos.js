@@ -66,6 +66,7 @@ const putFormsPz = (req,res) => {
       form.id === updateForm.id
     )
   })
+  console.log(ind)
   if (ind === -1){
     res.status(401).send({message:'EL FORMULARIO NO EXISTE'})
     return
@@ -80,7 +81,7 @@ const putFormsPz = (req,res) => {
   res.status(200).send({message:'El formulario fue actualizado con éxito'})
 }
 const deleteFormsPz = (req,res) => {
-  const idF = req.params.id
+  const idF = +req.params.id
   let formsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/procesosFormsPz.json','utf8')
   let forms = JSON.parse(formsRaw)
   const ind = forms.findIndex((form)=>{
