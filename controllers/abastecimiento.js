@@ -189,8 +189,6 @@ const uploadInput = (req,res)=>{
           if (!abas.cantidad){
             const insumoToRemove = abasTable[posIndex].insumos[indexDown]
             abasTable[posIndex].insumos.splice(indexDown,1)
-            res.status(200).send(insumoToRemove)
-            return
           } 
           else {
             abasTable[posIndex].insumos[indexDown].cantidad -= abas.cantidad

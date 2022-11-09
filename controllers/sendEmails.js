@@ -40,7 +40,7 @@ const sendEmails = async (res,area,body) =>{
   // send mail with defined transport object
   let info = await transporter.sendMail({
     to: listOfEmails, // list of receivers
-    subject: "Pruebas envio correo automaitico", // Subject line
+    subject: body.subject, // Subject line
     text: "-", // plain text body
     html: body.message, // html body
   });
