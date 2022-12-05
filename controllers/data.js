@@ -42,33 +42,33 @@ const postPzAbas = (req,res)=>{
   res.status(200).send({message:mes})
   return
 }
-const getUsersAbas = (req, res) => {
-  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
-  let users = JSON.parse(usersRaw)
-  res.send(users)
-}
-const postUserAbas = (req,res) => {
-  const newUser = req.body
-  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
-  let abasUser = JSON.parse(abasUserRaw)
-  const found = abasUser.findIndex (user => {
-    return user.user === newUser.nombreOpe
-  });
-  if (found !== -1 ){
-    res.status(401).send({message:'EL USUARIO YA EXISTE'})
-    return
-  }
-  abasUser.push(
-    {
-      "user": newUser.nombreOpe,
-      "shift": newUser.turno,
-      "password": ""
-    }
-  )
-  fs.writeFile('../'+db+'/datos/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
-    if (err) throw (err);
-  })
-}
+// const getUsersAbas = (req, res) => {
+//   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
+//   let users = JSON.parse(usersRaw)
+//   res.send(users)
+// }
+// const postUserAbas = (req,res) => {
+//   const newUser = req.body
+//   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
+//   let abasUser = JSON.parse(abasUserRaw)
+//   const found = abasUser.findIndex (user => {
+//     return user.user === newUser.nombreOpe
+//   });
+//   if (found !== -1 ){
+//     res.status(401).send({message:'EL USUARIO YA EXISTE'})
+//     return
+//   }
+//   abasUser.push(
+//     {
+//       "user": newUser.nombreOpe,
+//       "shift": newUser.turno,
+//       "password": ""
+//     }
+//   )
+//   fs.writeFile('../'+db+'/datos/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+//     if (err) throw (err);
+//   })
+// }
 
 
 const getPzDepo = (req,res)=>{
@@ -105,33 +105,33 @@ const postPzDepo = (req,res)=>{
   res.status(200).send({message:mes})
   return
 }
-const getUsersDepo = (req, res) => {
-  let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
-  let users = JSON.parse(usersRaw)
-  res.send(users)
-}
-const postUserDepo = (req,res) => {
-  const newUser = req.body
-  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
-  let abasUser = JSON.parse(abasUserRaw)
-  const found = abasUser.findIndex (user => {
-    return user.user === newUser.nombreOpe
-  });
-  if (found !== -1 ){
-    res.status(401).send({message:'EL USUARIO YA EXISTE'})
-    return
-  }
-  abasUser.push(
-    {
-      "user": newUser.nombreOpe,
-      "shift": newUser.turno,
-      "password": ""
-    }
-  )
-  fs.writeFile('../'+db+'/datos/depositoUsers.json',JSON.stringify(abasUser,null,2),function (err){
-    if (err) throw (err);
-  })
-}
+// const getUsersDepo = (req, res) => {
+//   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
+//   let users = JSON.parse(usersRaw)
+//   res.send(users)
+// }
+// const postUserDepo = (req,res) => {
+//   const newUser = req.body
+//   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
+//   let abasUser = JSON.parse(abasUserRaw)
+//   const found = abasUser.findIndex (user => {
+//     return user.user === newUser.nombreOpe
+//   });
+//   if (found !== -1 ){
+//     res.status(401).send({message:'EL USUARIO YA EXISTE'})
+//     return
+//   }
+//   abasUser.push(
+//     {
+//       "user": newUser.nombreOpe,
+//       "shift": newUser.turno,
+//       "password": ""
+//     }
+//   )
+//   fs.writeFile('../'+db+'/datos/depositoUsers.json',JSON.stringify(abasUser,null,2),function (err){
+//     if (err) throw (err);
+//   })
+// }
 
 
 const getProductos = (req,res) => {
@@ -153,26 +153,38 @@ const postProductos = (req,res)=>{
 
 
 const getEmailsProcesos = (req,res)=>{
-  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emailsProcesos.json','utf8')
+  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/procesos.json','utf8')
   let emails = JSON.parse(emailsRaw)
   res.send(emails)
 }
 const postEmailsProcesos = (req,res)=>{
   const newEmials = req.body
-  fs.writeFile('../'+db+'/emailsProcesos.json',JSON.stringify(newEmials,null,2),function (err){
+  fs.writeFile('../'+db+'/emails/procesos.json',JSON.stringify(newEmials,null,2),function (err){
     if (err) throw (err);
   })
   res.status(200).send({message:'Los mails fueron actualizados con éxito'})
 }
 
-const getEmailsInyeccion = (req,res) => {
-  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emailsInyeccion.json','utf8')
+const getEmailsInyeccionMaq = (req,res) => {
+  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/inyeccionMaquinas.json','utf8')
   let emails = JSON.parse(emailsRaw)
   res.send(emails)
 }
-const postEmailsInyeccion = (req,res)=>{
+const postEmailsInyeccionMaq = (req,res)=>{
   const newEmials = req.body
-  fs.writeFile('../'+db+'/emailsInyeccion.json',JSON.stringify(newEmials,null,2),function (err){
+  fs.writeFile('../'+db+'/emails/inyeccionMaquinas.json',JSON.stringify(newEmials,null,2),function (err){
+    if (err) throw (err);
+  })
+  res.status(200).send({message:'Los mails fueron actualizados con éxito'})
+}
+const getEmailsInyeccionMol = (req,res) => {
+  let emailsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/emails/inyeccionMoldes.json','utf8')
+  let emails = JSON.parse(emailsRaw)
+  res.send(emails)
+}
+const postEmailsInyeccionMol = (req,res)=>{
+  const newEmials = req.body
+  fs.writeFile('../'+db+'/emails/inyeccionMoldes.json',JSON.stringify(newEmials,null,2),function (err){
     if (err) throw (err);
   })
   res.status(200).send({message:'Los mails fueron actualizados con éxito'})
@@ -188,15 +200,19 @@ const getMatriceriaMoldes = (req, res) => {
   let moldes = JSON.parse(moldesRaw)
   res.send(moldes)
 }
+
+//Aux MongoDB
+
+
 module.exports = {
   getMachines, 
   getPzAbas, postPzAbas, 
-  getUsersAbas, postUserAbas,
+  // getUsersAbas, postUserAbas,
   getPzDepo, postPzDepo,
-  getUsersDepo, postUserDepo,
+  // getUsersDepo, postUserDepo,
   getProductos, postProductos,
   getEmailsProcesos, postEmailsProcesos, 
-  getEmailsInyeccion, postEmailsInyeccion,
+  getEmailsInyeccionMaq, postEmailsInyeccionMaq,
+  getEmailsInyeccionMol, postEmailsInyeccionMol,
   getMatriceriaUsers, getMatriceriaMoldes
-
 }

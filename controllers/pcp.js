@@ -1,4 +1,4 @@
-const db = require ('../config.js')
+
 
 const getTable = (req,res)=>{
   let productionInyRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/productionIny.json','utf8')

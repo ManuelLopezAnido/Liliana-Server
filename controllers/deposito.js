@@ -83,10 +83,8 @@ const getTable = (req,res)=>{
 //   res.status(200).send({message:'Usuario cargado con éxito!'})
 // }
 
-
-
 const login = (req,res)=>{
-  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
+  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/data/depositoUsers.json','utf8')
   let depoUser = JSON.parse(depoUserRaw)
   const loginData = req.body
  
@@ -97,7 +95,7 @@ const login = (req,res)=>{
   })
   if (depoUser[index].password === "") {
     depoUser[index].password = loginData.contraseña
-    fs.writeFile('../'+db+'/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
+    fs.writeFile('../'+db+'/data/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
       if (err) throw (err);
     })
     res.send(depoUser[index])

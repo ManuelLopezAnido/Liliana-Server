@@ -1,237 +1,196 @@
 const db = require ('../config.js')
 const fs = require('graceful-fs');
+const inputs = require ('../models/abastecimiento/inputs')
+const tables = require('../models/abastecimiento/tables');
 
-const backup = ()=>{
-  let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
-  let table = JSON.parse(tableRaw)
-  fs.writeFile('../backup/abasTable.json',JSON.stringify(table,null,2),function (err){
-    if (err) throw (err);
+
+//INPUTS
+const uploadAllInputs = (req,res)=>{
+  inputs.insertMany(allInputs)
+  .then((data) => {
+    console.log('EXITO: ', data)
+    res.status(200).json({data})
   })
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  fs.writeFile('../backup/abasInputs.json',JSON.stringify(inputs,null,2),function (err){
-    if (err) throw (err);
+  .catch((error) => res.status(500).json(error));
+} 
+
+const getInputs = (req,res)=>{
+  const month = req.params.month
+  inputs.find({
+    $or: [
+      {dateSend: {$regex: "/"+month+"/"}}
+    ]
   })
-}
-if (db === 'data samples' ) {
-  setInterval(backup,1000*3600)
-}
-
-const getTable = (req,res)=>{
-  let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
-  let table = JSON.parse(tableRaw)
-  res.send(table)
-}
-
-// const getPiezas = (req, res) => {
-//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
-//   let piezas = JSON.parse(piezasRaw)
-//   res.send(piezas)
-// }
-// const newPz = (req,res) => {
-//   const newPz = req.body
-//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasAbastecimiento.json','utf8')
-//   let piezas = JSON.parse(piezasRaw)
-//   const found = piezas.findIndex (pz => {
-//     return pz.articulo === newPz.codigo
-//   });
-//   let mes = ''
-//   if (found === -1 ){
-//     piezas.push({
-//       "articulo": newPz.codigo,
-//       "detalle": newPz.detalle,
-//       "familia": newPz.familia,
-//       "cantxPallet": newPz.cantxPallet,
-//       "stockM": newPz.stockM
-//     })
-//     mes='PIEZA NUEVA AGREGADA EXITOSAMENTE'
-//   } else {
-//     piezas[found].familia = newPz.familia
-//     piezas[found].familia = newPz.cantxPallet
-//     piezas[found].familia = newPz.stockM
-//     mes='PIEZA EDITADA EXITOSAMENTE'
-//   }
-//   fs.writeFile('../'+db+'/piezasAbastecimiento.json',JSON.stringify(piezas,null,2),function (err){
-//     if (err) throw (err);
-//   })
-//   res.status(200).send({message:mes})
-//   return
-// }
-// const getUsers = (req, res) => {
-//   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
-//   let users = JSON.parse(usersRaw)
-//   res.send(users)
-// }
-// const newWorker = (req,res) => {
-//   const newUser = req.body
-//   let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
-//   let abasUser = JSON.parse(abasUserRaw)
-//   const found = abasUser.findIndex (user => {
-//     return user.user === newUser.nombreOpe
-//   });
-//   if (found !== -1 ){
-//     res.status(401).send({message:'EL USUARIO YA EXISTE'})
-//     return
-//   }
-//   abasUser.push(
-//     {
-//       "user": newUser.nombreOpe,
-//       "shift": newUser.turno,
-//       "password": ""
-//     }
-//   )
-//   fs.writeFile('../'+db+'/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
-//     if (err) throw (err);
-//   })
-// }
-
-const getInputs = (req,res) => {
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  res.send(inputs)
+  .then((data) => {
+    console.log('EXITO: ')
+    res.status(200).json(data)
+  })
+  .catch((error) => res.status(500).json(error));
 }
 
-const login = (req,res)=>{
-  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoUsers.json','utf8')
-  let abasUser = JSON.parse(abasUserRaw)
-  
-  const loginData = req.body
-  console.log('Login data: ',loginData)
-  const index = abasUser.findIndex(lider => {
-    return(
-    lider.user===loginData.lider
-    )
+const addInputAsync = (req,res) => {
+  const inp= req.body
+  const newInput = new inputs(
+  {
+    "code": inp.codigo,
+    "rack": inp.estanteria,
+    "position": inp.posicion,
+    "height": inp.altura,
+    "comments": inp.comentarios,
+    "amount": inp.cantidad,  
+    "type": inp.radio,
+    "timeSend": inp.time,
+    "dateSend": inp.date,
+    "worker": inp.operario
   })
-  if (abasUser[index].password === "") {
-    abasUser[index].password = loginData.contraseña
-    fs.writeFile('../'+db+'/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
-      if (err) throw (err);
-    })
-    res.send(abasUser[index])
-  } else if(abasUser[index].password === loginData.contraseña) {
-    console.log('Contraseña correcta')
-    res.send(abasUser[index])  
-  } else {
-    console.log('Contraseña incorrecta')
-    res.status(401).send({message:'Contraseña incorrecta'})
-  }
+  return newInput.save()
+  .catch((error) => {
+    throw error
+  });
+}
+const 
+addInput = (req,res)=>{ //checked 
+  addInputAsync(req,res)
+  .then((result) => {
+    console.log('EXITO: ', result)
+    res.status(200).json({result})
+  })
+  .catch((error) => res.status(500).json(error));
 }
 
-const uploadInput = (req,res)=>{
-  let abasTableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoTable.json','utf8')
-  let abasTable = JSON.parse(abasTableRaw)
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/abastecimientoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  
-  const abas = req.body
-  inputs.push(abas)
-  console.log('Datos ingresado', abas)
-  fs.writeFile('../'+db+'/abastecimientoInputs.json',JSON.stringify(inputs,null,2),function (err){
-    if (err) throw (err);
+//TABLES
+const uploadAllTable = (req,res) => {
+  tables.insertMany(allTables)
+  .then((data) => {
+    console.log('EXITO: ', data)
+    res.status(200).json({data})
   })
-  let posIndex = abasTable.findIndex((pos)=>{
-    return(pos.estanteria===abas.estanteria && pos.posicion===abas.posicion && pos.altura===abas.altura)
+  .catch((error) => res.status(500).json(error));
+}
+
+const getTables = (req,res)=>{
+  tables.find()
+  .then((data) => {
+    console.log('EXITO: ', data)
+    res.status(200).json(data)
   })
-  if (!abasTable[posIndex]){
-    res.status(401).send({message:'La estanteria no existe!'})
-    console.log('La estantería no existe')
-    return
-  }
-  else{
-    console.log('Estanteria antes: ', abasTable[posIndex])
-    abasTable[posIndex].time = abas.time
-    abasTable[posIndex].date = abas.date
-    abasTable[posIndex].radio = abas.radio
-    switch (abas.radio){
-      case 'add':
-        //First looks if insmuos is empty
-        if(!abasTable[posIndex].insumos[0].codigo){
-          abasTable[posIndex].insumos=[]
+  .catch((error) => res.status(500).json(error));
+}
+
+const getOneTableAsync = (req,res) => {
+  const inp= req.body
+  return tables.findOne(
+    {
+      "rack": inp.estanteria,
+      "position": inp.posicion,
+      "height": inp.altura
+    }
+  )
+  .catch((error) => {
+  throw error
+  });
+}
+const getOneTable = (req,res) => { //checked
+  getOneTableAsync(req,res)
+  .then((data) => {
+    console.log('EXITO: ', data)
+    res.status(200).json({data})
+  })
+  .catch((error) => res.status(500).json(error));
+}
+
+const uploadTable = async (req,res)=>{
+  const inp = req.body
+  addInputAsync(req,res)
+  getOneTableAsync(req,res)
+  .then((table)=>{
+    if (!table){
+      res.status(401).send({message:'La estanteria no existe!'})
+       console.log('La estantería no existe')
+      return
+    }
+    let mge = ''
+    switch (inp.radio){
+      case 'add': //checked
+        //First, it looks if insmuos is empty 
+        if (table.supplies[0].code===""){
+          table.supplies=[] // if it does, I don't want to have an empty supply anymore
         }
         //Second, look if it is already in the position
-        const indexAdd = abasTable[posIndex].insumos.findIndex((insumo)=>{
+        const indexAdd = table.supplies.findIndex((supply)=>{
           return(
-            insumo.codigo === abas.codigo
+            supply.code === inp.codigo
           )
         })
-        if (indexAdd === -1 || /^[V-Z]{1}$/.test(abas.estanteria)){
-          abasTable[posIndex].insumos.push({
-            ['codigo']:abas.codigo,
-            ['cantidad']:abas.cantidad,
-            ['comentarios']:abas.comentarios
+        if (indexAdd === -1 || /^[V-Z]{1}$/.test(inp.estanteria)){
+          table.supplies.push({
+            ['code']:inp.codigo,
+            ['amount']:inp.cantidad,
+            ['comments']:inp.comentarios
           })
         } else {
-          abasTable[posIndex].insumos[indexAdd].cantidad += abas.cantidad
-          abasTable[posIndex].insumos[indexAdd].comentarios = abas.comentarios
+          table.supplies[indexAdd].amount += inp.cantidad
+          table.supplies[indexAdd].comments = inp.comentarios
         }
+        mge = 'Cantidad agregada correctamente'
         break
-      case 'replace':
-        abasTable[posIndex].insumos=[{
-          ['codigo']:abas.codigo,
-          ['cantidad']:abas.cantidad,
-          ['comentarios']:abas.comentarios
-        }]
-        break
-      case 'down':
-        //First, look if it is already in the position
-        const indexDown = abasTable[posIndex].insumos.findIndex((insumo)=>{
-          console.log('index: ',insumo.codigo)
+      case 'down': //checked
+        const indexDown = table.supplies.findIndex((supply)=>{
           return(
-            insumo.codigo === abas.codigo
+            supply.code === inp.codigo
           )
         })
-        console.log('index down',indexDown)
         if (indexDown === -1){
           console.log('Este insumo no se encuentra en la estanteria')
           res.status(401).send({message:'Este insumo no se encuentra en la estanteria!'})
           return
         } else {
-          if (!abas.cantidad){
-            const insumoToRemove = abasTable[posIndex].insumos[indexDown]
-            abasTable[posIndex].insumos.splice(indexDown,1)
-            res.status(200).send(insumoToRemove)
+          if (!inp.cantidad || inp.cantidad === table.supplies[indexDown].amount ){ 
+            // if input amount is zero, or equal to actual amount, then empty the supply
+            table.supplies.splice(indexDown,1)
+            mge = 'Insumo vaciado en su totalidad'
+          } else if(inp.cantidad > table.supplies[indexDown].amount) { 
+            // if input amount more than actual amount. Throw error
+            console.log('No se puede retirar mas cantidad de la que existe')
+            res.status(401).send({message:'No se puede retirar mas cantidad de la que existe'})
             return
-          } 
-          else {
-            abasTable[posIndex].insumos[indexDown].cantidad -= abas.cantidad
-            if (abasTable[posIndex].insumos[indexDown].cantidad <= 0) {
-              abasTable[posIndex].insumos.splice(indexDown,1)
-            }
+          } else {
+            //nomral case, just discount input amount
+            table.supplies[indexDown].amount -= inp.cantidad
+            table.supplies[indexDown].comments = inp.comentarios
+            mge = 'Cantidad bajada correctamente'
           }
           // if insumos got empty, push one empty object element
-          if (!abasTable[posIndex].insumos.length){
-            abasTable[posIndex].insumos.push({
-              codigo:'',
-              cantidad: 0
+          if (!table.supplies.length){
+            table.supplies.push({
+              code: '',
+              amount: 0,
+              comments: inp.comentarios
             })
           }
         }
         break
       case 'clean':
-        console.log(abas.altura)
-        if (abas.altura.charAt(1)==="A"){
-          for (let i = 0 ; i<4 ; i++){
-            abasTable[posIndex + i].insumos=[{
-              codigo:'',
-              cantidad: 0
-            }]
-          }
-        } else {
-          abasTable[posIndex].insumos=[{
-            codigo:'',
-            cantidad: 0
-          }]
-        }
+        table.supplies = [{
+          code: '',
+          amount: 0,
+          comments: inp.comentarios
+        }]
+        mge = 'Estanteria vaciada con exito' 
         break
+      case 'replace':
+        //this case is managed in the front end
       default:
         res.status(401).end({message:'Ingreso no válido'})
     }
-    console.log('La estanteria despues: ', abasTable[posIndex])
-  }
-  fs.writeFile('../'+db+'/abastecimientoTable.json',JSON.stringify(abasTable,null,2),function (err){
-    if (err) throw (err);
-  })
-  res.send(abasTable[posIndex])
+    table.timeSend = inp.time
+    table.dateSend = inp.date
+    table.type = inp.radio
+    tables.findByIdAndUpdate(table._id,table)
+    .catch((error) => res.status(500).json(error));
+    res.send({message: mge})
+  })  
 }
 
-module.exports = {getTable, login, uploadInput, getInputs}
+
+module.exports = { addInput, getInputs, getTables, getOneTable, uploadTable, uploadAllInputs, uploadAllTable}
