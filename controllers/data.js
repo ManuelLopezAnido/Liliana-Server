@@ -144,7 +144,7 @@ const postProductos = (req,res)=>{
   let productosRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/productos2.json','utf8')
   let productos = JSON.parse(productosRaw)
   productos.push(newProd)
-  fs.writeFile('../'+db+'/datos/productos2.json',JSON.stringify(piezas,null,2),function (err){
+  fs.writeFile('../'+db+'/datos/productos2.json',JSON.stringify(productos,null,2),function (err){
     if (err) throw (err);
   })
   res.status(200).send({message:'Producto nuevo agregado'})

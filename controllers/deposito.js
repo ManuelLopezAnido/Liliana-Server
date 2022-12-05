@@ -84,7 +84,7 @@ const getTable = (req,res)=>{
 // }
 
 const login = (req,res)=>{
-  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/data/depositoUsers.json','utf8')
+  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
   let depoUser = JSON.parse(depoUserRaw)
   const loginData = req.body
  

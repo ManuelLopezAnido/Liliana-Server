@@ -32,18 +32,17 @@ const sendEmails = async (res,area,body) =>{
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: "mlopez@liliana.com.ar", // generated ethereal user
-      pass: "123456.a", // generated ethereal password
+      user: "reparaciones@liliana.com.ar", // generated ethereal user
+      pass: "REPARACIONES_789_F1&/", // generated ethereal password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
     to: listOfEmails, // list of receivers
-    subject: "Pruebas envio correo automaitico", // Subject line
+    subject: body.subject, // Subject line
     text: "-", // plain text body
-    html: `<p>Esto es un bot <br> Disculpe las molestias. <br>
-    Mi nombre es: ${body.name} <br>Mi apellido: ${body.lastname}, <br>El area es: ${area} </p>`, // html body
+    html: body.message, // html body
   });
 
   console.log("Message sent: %s", info.messageId);
