@@ -4,5 +4,5 @@ const armado = require('../controllers/armado.js');
 router.put('/login',armado.login)
 router.put('/upload',armado.uploadInputs)
 router.get('/users',armado.getUsers)
-router.get('/inputs',armado.getInputs)
+router.get('/input',armado.getInputs)
 module.exports = router

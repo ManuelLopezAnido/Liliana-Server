@@ -3,7 +3,7 @@ const abastecimiento = require('../controllers/abastecimiento.js');
 
 router.get('/tables',abastecimiento.getTables)
 router.post('/onetable', abastecimiento.getOneTable)
-router.put('/upload', abastecimiento.uploadTable)
+router.post('/upload', abastecimiento.uploadTable)
 
 router.get('/allTables',abastecimiento.uploadAllTable) //just for creation
 

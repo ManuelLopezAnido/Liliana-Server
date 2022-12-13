@@ -67,36 +67,10 @@ const uploadAllTable = (req,res) => {
   })
   .catch((error) => res.status(500).json(error));
 }
-const login = (req,res)=>{
-  let abasUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/abastecimientoUsers.json','utf8')
-  let abasUser = JSON.parse(abasUserRaw)
-  
-  const loginData = req.body
-  console.log('Login data: ',loginData)
-  const index = abasUser.findIndex(lider => {
-    return(
-    lider.user===loginData.lider
-    )
-  })
-  if (abasUser[index].password === "") {
-    abasUser[index].password = loginData.contraseña
-    fs.writeFile('../'+db+'/datos/abastecimientoUsers.json',JSON.stringify(abasUser,null,2),function (err){
-      if (err) throw (err);
-    })
-    res.send(abasUser[index])
-  } else if(abasUser[index].password === loginData.contraseña) {
-    console.log('Contraseña correcta')
-    res.send(abasUser[index])  
-  } else {
-    console.log('Contraseña incorrecta')
-    res.status(401).send({message:'Contraseña incorrecta'})
-  }
-}
 
 const getTables = (req,res)=>{
   tables.find()
   .then((data) => {
-    console.log('EXITO: ', data)
     res.status(200).json(data)
   })
   .catch((error) => res.status(500).json(error));
@@ -137,17 +111,16 @@ const uploadTable = async (req,res)=>{
     let mge = ''
     switch (inp.radio){
       case 'add': //checked
-        //First, it looks if insmuos is empty 
-        if (table.supplies[0].code===""){
-          table.supplies=[] // if it does, I don't want to have an empty supply anymore
-        }
-        //Second, look if it is already in the position
+        //Look if it is already in the position
         const indexAdd = table.supplies.findIndex((supply)=>{
           return(
             supply.code === inp.codigo
           )
         })
         if (indexAdd === -1 || /^[V-Z]{1}$/.test(inp.estanteria)){
+          if (table.supplies[0].code===""){
+            table.supplies=[] // if it does, I don't want to have an empty supply anymore
+          }
           table.supplies.push({
             ['code']:inp.codigo,
             ['amount']:inp.cantidad,
@@ -184,16 +157,6 @@ const uploadTable = async (req,res)=>{
             table.supplies[indexDown].amount -= inp.cantidad
             table.supplies[indexDown].comments = inp.comentarios
             mge = 'Cantidad bajada correctamente'
-          if (!abas.cantidad){
-            const insumoToRemove = abasTable[posIndex].insumos[indexDown]
-            abasTable[posIndex].insumos.splice(indexDown,1)
-          } 
-          else {
-            abasTable[posIndex].insumos[indexDown].cantidad -= abas.cantidad
-            if (abasTable[posIndex].insumos[indexDown].cantidad <= 0) {
-              abasTable[posIndex].insumos.splice(indexDown,1)
-            }
-          }
           // if insumos got empty, push one empty object element
           if (!table.supplies.length){
             table.supplies.push({
@@ -214,7 +177,12 @@ const uploadTable = async (req,res)=>{
         mge = 'Estanteria vaciada con exito' 
         break
       case 'replace':
-        //this case is managed in the front end
+        table.supplies = [{
+          code: inp.codigo,
+          amount: inp.cantidad,
+          comments: inp.comentarios
+        }]
+        mge = 'Estanteria remplazada con exito' 
         break
       default:
         res.status(401).end({message:'Ingreso no válido'})

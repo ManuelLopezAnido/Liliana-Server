@@ -1,145 +1,115 @@
 const db = require ('../config.js')
-const fs = require('graceful-fs');
+const fs = require ('graceful-fs');
+const inputs = require ('../models/deposito/inputs')
+const tables = require ('../models/deposito/tables')
 
-
-const backup = () => {
-  let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
-  let table = JSON.parse(tableRaw)
-  fs.writeFile('../backup/depoTable.json',JSON.stringify(table,null,2),function (err){
-    if (err) throw (err);
-  })
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  fs.writeFile('../backup/depoInputs.json',JSON.stringify(inputs,null,2),function (err){
-    if (err) throw (err);
-  })
-}
-
-if (db === 'data samples' ) {
-  setInterval(backup,1000*3600)
-}
-
-
-const getTable = (req,res)=>{
-  let tableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
-  let table = JSON.parse(tableRaw)
-  res.send(table)
-}
-// const getPiezas = (req, res) => {
-//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
-//   let piezas = JSON.parse(piezasRaw)
-//   res.send(piezas)
-// }
-// const newPz = (req,res) => {
-//   const newPz = req.body
-//   let piezasRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/piezasDeposito.json','utf8')
-//   let piezas = JSON.parse(piezasRaw)
-//   const found = piezas.findIndex (pz => {
-//     return pz.articulo === newPz.codigo
-//   });
-//   if (found !== -1 ){
-//     res.status(401).send({message:'LA PIEZA YA EXISTE'})
-//     return
-//   }
-//   piezas.push({
-//     "articulo": newPz.codigo,
-//     "detalle": newPz.detalle,
-//     "familia": newPz.familia,
-//     "cantxPallet": newPz.cantxPallet,
-//     "stockM": newPz.stockM
-//   })
-//   fs.writeFile('../'+db+'/piezasDeposito.json',JSON.stringify(piezas,null,2),function (err){
-//     if (err) throw (err);
-//   })
-//   res.status(200).send({message:'Pieza cargada con éxito!'})
-// }
-// const getUsers = (req, res) => {
-//   let usersRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
-//   let users = JSON.parse(usersRaw)
-//   res.send(users)
-// }
-// const newWorker = (req,res) => {
-//   const newUser = req.body
-//   let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoUsers.json','utf8')
-//   let depoUser = JSON.parse(depoUserRaw)
-//   const found = depoUser.findIndex (user => {
-//     return user.user === newUser.nombreOpe
-//   });
-//   if (found !== -1 ){
-//     console.log('El usuario ya existe')
-//     res.status(401).send({message:'EL USUARIO YA EXISTE'})
-//     return
-//   }
-//   depoUser.push(
-//     {
-//       "user": newUser.nombreOpe,
-//       "shift": newUser.turno,
-//       "password": ""
-//     }
-//   )
-//   fs.writeFile('../'+db+'/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
-//     if (err) throw (err);
-//   })
-//   res.status(200).send({message:'Usuario cargado con éxito!'})
-// }
-
-const login = (req,res)=>{
-  let depoUserRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/datos/depositoUsers.json','utf8')
-  let depoUser = JSON.parse(depoUserRaw)
-  const loginData = req.body
  
-  const index = depoUser.findIndex(lider => {
-    return(
-    lider.user===loginData.lider
-    )
+
+
+const uploadAllInputs = (req,res)=>{ //cheked
+  inputs.insertMany(allInputs)
+  .then((data) => {
+    console.log('uploadAll', data)
+    res.status(200).json({data})
   })
-  if (depoUser[index].password === "") {
-    depoUser[index].password = loginData.contraseña
-    fs.writeFile('../'+db+'/data/depositoUsers.json',JSON.stringify(depoUser,null,2),function (err){
-      if (err) throw (err);
-    })
-    res.send(depoUser[index])
-  } else if(depoUser[index].password === loginData.contraseña) {
-    console.log('Contraseña correcta: ',loginData.lider)
-    res.send(depoUser[index])  
-  } else {
-    console.log('Contraseña incorrecta')
-    res.status(401).send({message:'Contraseña incorrecta'})
-  }
+  .catch((error) => res.status(500).json(error));
+} 
+
+const getInputs = (req,res)=>{
+  const month = req.params.month
+  inputs.find({
+    $or: [
+      {dateSend: {$regex: "/"+month+"/"}}
+    ]
+  })
+  .then((data) => {
+    console.log('EXITO: ')
+    res.status(200).json(data)
+  })
+  .catch((error) => res.status(500).json(error));
 }
-const uploadInput = (req,res)=>{
-  let depoTableRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoTable.json','utf8')
-  let depoTable = JSON.parse(depoTableRaw)
-  let inputsRaw = fs.readFileSync('C:/Users/mlopez/Desktop/'+db+'/depositoInputs.json','utf8')
-  let inputs = JSON.parse(inputsRaw)
-  
-  const depo = req.body
-  inputs.push(depo)
-  depo.cantidad = (depo.cantidad || "")
-  console.log('Datos ingresado', depo)
-  fs.writeFile('../'+db+'/depositoInputs.json',JSON.stringify(inputs,null,2),function (err){
-    if (err) throw (err);
+
+const addInputAsync = (req,res) => {
+  const inp= req.body
+  const newInput = new inputs(
+  {
+    "code": inp.codigo,
+    "rack": inp.estanteria,
+    "position": inp.posicion,
+    "height": inp.altura,
+    "comments": inp.comentarios,
+    "amount": inp.cantidad,  
+    "type": inp.radio,
+    "timeSend": inp.time,
+    "dateSend": inp.date,
+    "worker": inp.operario
   })
-  let posIndex = depoTable.findIndex((pos)=>{
-    return(pos.estanteria===depo.estanteria && pos.posicion===depo.posicion && pos.altura===depo.altura)
+  return newInput.save()
+  .catch((error) => {
+    throw error
+  });
+}
+const addInput = (req,res)=>{  //checked
+  addInputAsync(req,res)
+  .then((result) => {
+    console.log('EXITO: ', result)
+    res.status(200).json({result})
   })
-  if (!depoTable[posIndex]){
-    console.log('La estantería no existe')
-    res.status(401).send({message:'La estanteria no existe!'})
-    return
-  }
-  else{
-   
-    depoTable[posIndex].time = depo.time
-    depoTable[posIndex].date = depo.date
-    depoTable[posIndex].radio = depo.radio
-    depoTable[posIndex].comentarios = depo.comentarios
-    
-    switch (depo.radio){
+  .catch((error) => res.status(500).json(error));
+}
+
+//TABLES
+
+const getTables = (req,res)=>{ //checked
+  tables.find()
+  .then((data) => {
+    res.status(200).json(data)
+  })
+  .catch((error) => res.status(500).json(error));
+}
+
+const getOneTableAsync = (req,res) => {
+  const inp= req.body
+  return tables.findOne(
+    {
+      "rack": inp.estanteria,
+      "position": inp.posicion,
+      "height": inp.altura
+    }
+  )
+  .catch((error) => {
+  throw error
+  });
+}
+const getOneTable = (req,res) => { 
+  getOneTableAsync(req,res)
+  .then((data) => {
+    res.status(200).json({data})
+  })
+  .catch((error) => res.status(500).json(error));
+}
+
+
+
+const uploadTable = (req,res)=>{ // REVISAR ESTA. LA UNICA QUE FALTA EN TEORIA
+  //TENGO QUE ACORDARME DE PUSHEAR A INPUTS
+
+  const inp = req.body
+  console.log('inpputs' , inp)
+  addInputAsync(req,res)
+  getOneTableAsync(req,res)
+  .then((table)=>{
+    if (!table){
+      res.status(401).send({message:'La estanteria no existe!'})
+       console.log('La estantería no existe')
+      return
+    }
+    let mge = ''
+    switch (inp.radio){
       case 'add':
         //First look the amount of elements
-        let maxAmount = 100
-        switch(depo.estanteria){
+        let maxAmount
+        switch(inp.estanteria){
           case 'A':
           case 'B':
             maxAmount = 4;
@@ -155,87 +125,94 @@ const uploadInput = (req,res)=>{
             maxAmount = 3;
             break;
         }
-        if (depoTable[posIndex].insumos.length > maxAmount){
+        if (table.supplies.length > maxAmount){
           console.log('La estantería llego a su capcidad maxima de ' + maxAmount + ' unidades')
-          res.status(401).send({message:'La estantería llego a su capcidad maxima de ' + maxAmount + ' unidades'})
+          mge = 'La estantería llego a su capcidad maxima de ' + maxAmount + ' unidades'
           return
         }
-
-        //Second looks if insmuos is empty
-        if(!depoTable[posIndex].insumos[0].codigo){
-          depoTable[posIndex].insumos=[]
-        }
         //Then, look if it is already in the position
-        const indexAdd = depoTable[posIndex].insumos.findIndex((insumo)=>{
+        const indexAdd = table.supplies.findIndex((supply)=>{
           return(
-            insumo.codigo === depo.codigo
+            supply.code === inp.codigo
           )
         })
-        if (indexAdd === -1 || /^[V-Z]{1}$/.test(depo.estanteria)){
-          depoTable[posIndex].insumos.push({
-            ['codigo']:depo.codigo,
-            ['cantidad']:depo.cantidad,
-            ['comentarios']:depo.comentarios
+        if (indexAdd === -1 || /^[V-Z]{1}$/.test(inp.estanteria)){
+          if(!table.supplies[0].code){
+            table.supplies=[]
+          }
+          table.supplies.push({
+            ['code']:inp.codigo,
+            ['amount']:inp.cantidad,
+            ['comments']:inp.comentarios
           })
         } else {
-          
-          depoTable[posIndex].insumos[indexAdd].cantidad = +depoTable[posIndex].insumos[indexAdd].cantidad + depo.cantidad
-          depoTable[posIndex].insumos[indexAdd].comentarios = depo.comentarios
+          table.supplies[indexAdd].amount += inp.cantidad
+          table.supplies[indexAdd].comments = inp.comentarios
         }
+        mge = 'Cantidad agregada correctamente'
         break
-      case 'replace':
-        depoTable[posIndex].insumos=[{
-          ['codigo']:depo.codigo,
-          ['cantidad']:depo.cantidad,
-          ['comentarios']:depo.comentarios
-        }]
-        break
-      case 'down':
-        //First, look if it is already in the position
-        const indexDown = depoTable[posIndex].insumos.findIndex((insumo)=>{
+      case 'down': //checked
+        const indexDown = table.supplies.findIndex((supply)=>{
           return(
-            insumo.codigo === depo.codigo
+            supply.code === inp.codigo
           )
         })
         if (indexDown === -1){
+          console.log('Este insumo no se encuentra en la estanteria')
           res.status(401).send({message:'Este insumo no se encuentra en la estanteria!'})
           return
-        } 
-        else {
-          if (!depo.cantidad){
-            depoTable[posIndex].insumos.splice(indexDown,1)
-          } 
-          else {
-            depoTable[posIndex].insumos[indexDown].cantidad -= depo.cantidad
-            if (depoTable[posIndex].insumos[indexDown].cantidad <= 0) {
-              depoTable[posIndex].insumos.splice(indexDown,1)
-            }
-          }
-          // if insumos got empty, push one empty object element
-          if (!depoTable[posIndex].insumos.length){
-            depoTable[posIndex].insumos.push({
-              codigo:'',
-              cantidad: 0
+        } else {
+          if (!inp.cantidad || inp.cantidad === table.supplies[indexDown].amount ){ 
+            // if input amount is zero, or equal to actual amount, then empty the supply
+            table.supplies.splice(indexDown,1)
+            mge = 'Insumo vaciado en su totalidad'
+          } else if(inp.cantidad > table.supplies[indexDown].amount) { 
+            // if input amount more than actual amount. Throw error
+            console.log('No se puede retirar mas cantidad de la que existe')
+            res.status(401).send({message:'No se puede retirar mas cantidad de la que existe'})
+            return
+          } else {
+            //nomral case, just discount input amount
+            table.supplies[indexDown].amount -= inp.cantidad
+            table.supplies[indexDown].comments = inp.comentarios
+            mge = 'Cantidad bajada correctamente'
+          }  // if insumos got empty, push one empty object element
+          if (!table.supplies.length){
+            table.supplies.push({
+              code: '',
+              amount: 0,
+              comments: inp.comentarios
             })
           }
         }
         break
       case 'clean':
-        depoTable[posIndex].insumos=[{
-          codigo:'',
-          cantidad: 0
+        table.supplies = [{
+          code: '',
+          amount: 0,
+          comments: inp.comentarios
         }]
+        mge = 'Estanteria vaciada con exito' 
+      break
+      case 'replace':
+        table.supplies = [{
+          code: inp.codigo,
+          amount: inp.cantidad,
+          comments: inp.comentarios
+        }]
+        mge = 'Estanteria remplazada con exito' 
         break
       default:
-        res.status(401).send({message:'Ingreso no válido'})
-        return
+        res.status(401).end({message:'Ingreso no válido'})
     }
-  }
-  fs.writeFile('../'+db+'/depositoTable.json',JSON.stringify(depoTable,null,2),function (err){
-    if (err) throw (err);
-  })
-  console.log('Cambio en Deposito exitoso')
-  res.status(200).send({message:'Exito'})
+    table.timeSend = inp.time
+    table.dateSend = inp.date
+    table.type = inp.radio
+    console.log("Tabla: ",table)
+    tables.findByIdAndUpdate(table._id,table)
+    .catch((error) => res.status(500).json(error));
+    res.send({message: mge})
+  })  
 }
 
-module.exports = {getTable, login, uploadInput}
+module.exports = {uploadAllInputs, getInputs, addInput, uploadTable, getTables}
